@@ -1,0 +1,78 @@
+/*
+*Nav-Link: 4 links in the middle 
+*Contact-Link: Contact link on the right
+*/
+
+.nav_link {
+    color: #000;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.nav_link:hover {
+    color: #000;
+}
+
+.nav_link:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.nav_link::before {
+    content: "";
+    position: absolute;
+    visibility: hidden;
+    background-color: #000;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* ______________________________________________________ */
+
+.nav_contact {
+    color: #000;
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.nav_contact:hover {
+    color: #000;
+}
+
+.nav_contact:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.nav_contact::before {
+    content: "";
+    position: absolute;
+    visibility: hidden;
+    background-color: #000;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
