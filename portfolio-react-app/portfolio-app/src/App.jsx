@@ -15,10 +15,11 @@ const screenSize = {
 
 const styles = StyleSheet.create({
   body: {
-    overflow: 'hidden',
-    [screenSize.smartphone]: {
-      webkitOverflowScrolling: 'touch'
-    }
+  },
+  navigation: {
+    zIndex: 100
+  },
+  main_container: {
   }
 });
 
@@ -26,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className={css(styles.body)}>
-        <Navigation />
+        <Navigation className={css(styles.navigation)}/>
         <div className={css(styles.main_container)}>
           <Switch>
             <Route path="/" component={Home} exact />
