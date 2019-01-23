@@ -21,7 +21,9 @@ const styles = StyleSheet.create({
         padding: '1rem',
     },
     nav_logo: {
-        flex: '1'
+        display: 'flex',
+        flex: '1',
+        justifyContent: 'flex-start',        
     },
     nav_links: {
         display: 'flex',
@@ -222,7 +224,9 @@ class Navigation extends Component {
     render() {
         return (
             <div className={css(styles.nav)}>
-                <div className={css(styles.nav_logo)}>LAWRENCE DOUGLAS</div>
+                <div className={css(styles.nav_logo)}>
+                    <Link to='/' className='nav_logo'>LAWRENCE DOUGLAS</Link>
+                </div>
                 <div className={css(styles.nav_links)}>
                     <Link to='/' className='nav_link active'>Intro</Link>
                     <Link to='/about' className='nav_link active'>About</Link>
