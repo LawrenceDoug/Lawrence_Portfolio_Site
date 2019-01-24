@@ -126,13 +126,13 @@
 
 /* Add Animation */
 @keyframes animatetop {
-    from {left: -300px; opacity: 0}
+    from {left: -1000px; opacity: 0}
     to {left: 0; opacity: 1}
 }
 
 @keyframes animatestop {
     from {left: 0; opacity: 1}
-    to {left: -300px; opacity: 0}
+    to {left: -1000px; opacity: 0}
 }
 
 /* ______________________________________________________ */
@@ -168,4 +168,19 @@
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
+}
+
+/* _________________________________________ */
+
+.modal-active {
+    z-index: 1; /* Sit on top */
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    overflow: auto; /* Enable scroll if needed */
+    width: 85vw; /* Full width */
+    height: 100%; /* Full height */
+    left: 0;
+    top: 0;
+    background-color: #fff; /* Fallback color */
+    box-shadow: 5px 0px 20px #fab;
 }

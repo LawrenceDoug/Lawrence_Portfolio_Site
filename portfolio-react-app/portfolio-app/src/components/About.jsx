@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import '../App.css';
 
 const Lawrence = require('../assets/images/personal/Lawrence.jpg');
 
@@ -15,7 +14,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         flex: '1',
         padding: '0',
-        margin: '0',
+        marginTop: '60px',
         width: '100%',
         height: '100%',
     },

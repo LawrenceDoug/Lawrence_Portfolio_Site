@@ -7,6 +7,7 @@ import { StyleSheet, css } from 'aphrodite';
 import './App.css';
 import Home from './components/Home';
 import About from './components/About';
+import Work from './components/Work';
 import Navigation from './components/layout/Navigation';
 
 const screenSize = {
@@ -15,11 +16,20 @@ const screenSize = {
 
 const styles = StyleSheet.create({
   body: {
+    width: '100%',
+    height: '100%',
+    margin: '0',
+    padding: '0'
   },
   navigation: {
-    zIndex: 100
+    zIndex: 1,
+    position: 'absolute'
   },
   main_container: {
+    width: '100%',
+    height: '100%',
+    marginTop: '-60px',
+    padding: '0'
   }
 });
 
@@ -32,6 +42,7 @@ class App extends Component {
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/about" component={About} exact />
+            <Route path="/work" component={Work} exact />
           </Switch>
         </div>
       </div>

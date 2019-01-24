@@ -19,11 +19,12 @@ const styles = StyleSheet.create({
         flex: '1',
         margin: '0',
         padding: '1rem',
+        backgroundColor: 'transparent'
     },
     nav_logo: {
         display: 'flex',
         flex: '1',
-        justifyContent: 'flex-start',        
+        justifyContent: 'flex-start',
     },
     nav_links: {
         display: 'flex',
