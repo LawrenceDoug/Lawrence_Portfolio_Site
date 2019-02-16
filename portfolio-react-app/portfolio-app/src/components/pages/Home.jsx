@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import '../css/home.css';
+import '../../css/home.css';
 
 
 const screenSize = {
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   header_container: {
     width: '100%',
     height: '100vh',
-    backgroundImage: 'linear-gradient(to top, #FF416C, #FF4B2B)',
+    backgroundImage: 'linear-gradient(to bottom, #bc4e9c, #f80759)',
   }
 });
 

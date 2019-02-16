@@ -40,7 +40,7 @@
     transition: all 0.3s ease-in-out 0s;
 }
 
-.active:focus {
+.nav_link:active {
     color: #fab;
     padding-bottom: 5px;
     border-bottom: 2px solid currentColor

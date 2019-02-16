@@ -1,0 +1,44 @@
+{
+    "skills": [
+        {
+           "id": "1",
+           "title": "HTML",
+           "link": "https://www.w3schools.com/html/" 
+        },
+        {
+            "id": "2",
+            "title": "CSS",
+            "link": "https://www.w3schools.com/css/" 
+         },
+         {
+            "id": "3",
+            "title": "Javascript",
+            "link": "https://www.javascript.com/" 
+         },
+         {
+            "id": "4",
+            "title": "ReactJS",
+            "link": "https://reactjs.org/" 
+         },
+         {
+            "id": "5",
+            "title": "ReduxJS",
+            "link": "https://redux.js.org/" 
+         },
+         {
+            "id": "6",
+            "title": "Node.js",
+            "link": "https://nodejs.org/en/" 
+         },
+         {
+            "id": "7",
+            "title": "ExpressJS",
+            "link": "https://expressjs.com/" 
+         },
+         {
+            "id": "8",
+            "title": "MongoDB",
+            "link": "https://www.mongodb.com/" 
+         }
+    ]
+}

@@ -1,0 +1,52 @@
+body {
+  overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.navigation {
+    z-index: 1;
+    position: absolute;
+  }
+
+.main-container {
+    margin-top: -100px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $portfolio-light-violet;
+  }
+
+.clear-element {
+  margin: 0;
+  padding: 0;
+}
+
+// Custom Scroll Bar
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f9f9f9; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $portfolio-light-violet; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $portfolio-violet; 
+}
+
+// Custom element selection
+*::selection {
+  color: $portfolio-white;
+}

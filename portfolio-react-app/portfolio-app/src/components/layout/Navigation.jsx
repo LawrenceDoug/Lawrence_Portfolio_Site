@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import '../../css/navigation.css';
 import { StyleSheet, css } from 'aphrodite';
 import Resume from '../../documents/Resume.pdf';
@@ -226,13 +227,13 @@ class Navigation extends Component {
         return (
             <div className={css(styles.nav)}>
                 <div className={css(styles.nav_logo)}>
-                    <Link to='/' className='nav_logo'>LAWRENCE DOUGLAS</Link>
+                    <NavLink to='/' className='nav_logo'>LAWRENCE DOUGLAS</NavLink>
                 </div>
                 <div className={css(styles.nav_links)}>
-                    <Link to='/' className='nav_link active'>Intro</Link>
-                    <Link to='/about' className='nav_link active'>About</Link>
-                    <Link to='/work' className='nav_link active'>Work</Link>
-                    <Link to={Resume} className='nav_link' target='_blank'>Resume</Link>
+                    <NavLink to='/' className='nav_link'>Intro</NavLink>
+                    <NavLink to='/about' className='nav_link'>About</NavLink>
+                    <NavLink to='/work' className='nav_link'>Work</NavLink>
+                    <NavLink to={Resume} className='nav_link' target='_blank'>Resume</NavLink>
                 </div>
                 <div className={css(styles.nav_contact)}>
                     <div onClick={this.handleModal.bind(this)} id='nav_contact' className='nav_contact'>Contact</div>
@@ -319,4 +320,4 @@ class Navigation extends Component {
     }
 }
 
-export default Navigation;
+export default withRouter(Navigation);
