@@ -1,0 +1,212 @@
+// App.jsx
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.navigation {
+    z-index: 1;
+    position: absolute;
+  }
+
+.main-container {
+    margin-top: -100px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+  }
+
+// About.jsx
+.about-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.personal-info-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.personal-pic {
+  margin: auto;
+  margin-top: 100px;
+  padding: 1rem;
+  width: 400px;
+  height: 400px;
+  border-radius: 1000px;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.name {
+  color: $portfolio-black;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1;
+}
+
+.titles {
+  color: $portfolio-black;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 1;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  width: 75%;
+  color: $portfolio-black;
+  font-size: 1.3rem;
+  text-indent: 50px;
+  text-align: left;
+}
+
+.extra-info-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 100%;
+}
+
+.skills-main-title, .experience-main-title {
+  color: $primary-color;
+  background-color: $secondary-color;
+  padding: 10px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.skill-padding {
+  padding: 6px;
+}
+
+.skill {
+  background-color: $tertiary-color;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.skill:hover {
+  cursor: pointer;
+  color: $primary-color;
+  background-color: $secondary-color;
+}
+
+.skill-link {
+  color: $portfolio-black;
+  text-decoration: none;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  flex: 8;
+}
+
+.experience1 {
+  padding-bottom: 15px; 
+  background-color: $tertiary-color;
+}
+
+.experience2 {
+  padding-bottom: 15px; 
+  background-color: $primary-color;
+}
+
+.experience-title {
+  padding-top: 5px; 
+  padding-left: 10px;
+  padding-right: 5px;
+  font-size: 1.75rem;
+  font-weight: bolder;
+  letter-spacing: 1;
+}
+
+.experience-location {
+  padding-left: 10px;
+  padding-right: 5px;
+  font-size: 1.35rem;
+  font-weight: lighter;
+  letter-spacing: 1;
+}
+
+.experience-time {
+  padding-left: 10px;
+  padding-right: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1;
+}
+
+.experience-description {
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  width: 95%;
+  font-size: 1.2rem;
+}
+
+// About.jsx Skill/Experience Section
+@media only screen and (max-width: 600px) {
+  
+.personal-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .extra-info-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+  }
+
+  .skills-main-title, .experience-main-title {
+    font-size: 1.5rem;
+  }
+}

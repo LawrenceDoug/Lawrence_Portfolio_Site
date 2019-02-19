@@ -11,10 +11,10 @@ import './App.css';
 import './index.css';
 
 //Pages
+import Navigation from './components/common/Navigation';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Work from './components/pages/Work';
-import Navigation from './components/layout/Navigation';
 
 class App extends Component {
   render() {

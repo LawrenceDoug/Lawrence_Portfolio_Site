@@ -1,5 +1,30 @@
 .disable-link {
     pointer-events: none;
-    color: $portfolio-white;
     background-color: $portfolio-black;
 }
+
+// Custom Scroll Bar
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $primary-color; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $tertiary-color; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $secondary-color; 
+  }
+  
+  // Custom element selection
+  *::selection {
+    color: $portfolio-white;
+  }

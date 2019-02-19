@@ -1,6 +1,5 @@
 //Imports
 import React, { Component } from 'react';
-import '../../index.css';
 
 //Experience JSON
 const experiences = require('../../json/experience');
@@ -14,13 +13,9 @@ const mySkills = skills.skills;
 const Lawrence = require('../../assets/images/personal/Lawrence.jpg');
 
 class About extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
-            <div id='about-container' className='about-container'>
+            <div className='about-container'>
                 <div className='personal-info-container'>
                     <img className='personal-pic' src={Lawrence} alt="It's me!" />
                     <div className='personal-info'>
@@ -42,9 +37,9 @@ class About extends Component {
                             {
                                 mySkills.map((skill) => {
                                     return (
-                                        <a className='skill-link' href={skill.link} alt={skill.title} target='_blank'>
+                                        <a key={skill.id} className='skill-link' href={skill.link} alt={skill.title} target='_blank' rel="noopener noreferrer">
                                             <div className='skill-padding'>
-                                                <div key={skill.id} className='skill'>
+                                                <div className='skill'>
                                                     {skill.title}
                                                 </div>
                                             </div>
@@ -73,9 +68,6 @@ class About extends Component {
                             })
                         }
                     </div>
-                    {/* <div className='empty-container'>
-                        <div className='experience-main-title'></div>
-                    </div> */}
                 </div>
             </div>
         );

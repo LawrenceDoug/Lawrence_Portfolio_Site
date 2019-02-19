@@ -21,8 +21,6 @@ const styles = StyleSheet.create({
   }
 });
 
-// {css(styles.home_container)}
-
 class Home extends Component {
   render() {
     return (
