@@ -1,14 +1,14 @@
 {
     "experiences": [
         {
-            "id": 1,
+            "id": 0,
             "title": "Community Cork Full Stack Web Application",
             "location": "Greater Salt Lake City Area",
             "time": "January 2019 - Current",
             "description": "This is a Neumont College of Computer Science Collaborative Enterprise Project.\nStudents are tasked with working in a team-based project environment to work with companies and do what is required of us.\nMy team and I are developing a web-based application that gives users access to events in the area.\nThis application also coincides with another app which is the ZIING mobile application."
         },
         {
-            "id": 2,
+            "id": 1,
             "title": "Neumont College of Computer Science - Event Coordinator",
             "location": "143 Main St, Salt Lake City, UT, 84111",
             "time": "September 2018 - December 2018",

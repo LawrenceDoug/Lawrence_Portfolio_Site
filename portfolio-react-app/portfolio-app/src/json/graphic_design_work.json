@@ -1,15 +1,7 @@
 {
     "gd_work": [
         {
-            "id": 1.1,
-            "img": "https://images-na.ssl-images-amazon.com/images/I/41lZRB1V2yL.jpg",
-            "imgName": "Sora",
-            "title": "Sora is Here",
-            "desc": "The boy with the key will save us all The boy with the key will save us allThe boy with the key will save us all The boy with the key will save us all The boy with the key will save us all The boy with the key will save us all",
-            "color": "blue"
-        },
-        {
-            "id": 1.2,
+            "id": 1,
             "img": "https://media.comicbook.com/2018/12/kingdom-hearts-3-1149243.jpeg",
             "imgName": "Sora",
             "title": "Sora is Here",
@@ -17,52 +9,36 @@
             "color": "purple"
         },
         {
-            "id": 2.1,
+            "id": 2,
             "img": "https://media.comicbook.com/2018/12/kingdom-hearts-3-1149243.jpeg",
-            "imgName": "Sora 2",
+            "imgName": "Sora",
             "title": "Sora is Here",
             "desc": "The boy with the key will save us all",
             "color": "purple"
         },
         {
-            "id": 2.2,
-            "img": "https://images-na.ssl-images-amazon.com/images/I/41lZRB1V2yL.jpg",
-            "imgName": "Sora",
-            "title": "Sora is Here",
-            "desc": "The boy with the key will save us all The boy with the key will save us allThe boy with the key will save us all The boy with the key will save us all The boy with the key will save us all The boy with the key will save us all",
-            "color": "blue"
-        },
-        {
-            "id": 3.1,
+            "id": 3,
             "img": "https://media.comicbook.com/2018/12/kingdom-hearts-3-1149243.jpeg",
-            "imgName": "Sora 2",
-            "title": "Sora is Here",
-            "desc": "The boy with the key will save us all",
+            "imgName": "Insta",
+            "title": "EEEEEEEEEEEEEEEEEE",
+            "desc": "Guud picture boi",
             "color": "purple"
         },
         {
-            "id": 3.2,
-            "img": "https://images-na.ssl-images-amazon.com/images/I/41lZRB1V2yL.jpg",
-            "imgName": "Sora",
-            "title": "Sora is Here",
-            "desc": "The boy with the key will save us all The boy with the key will save us allThe boy with the key will save us all The boy with the key will save us all The boy with the key will save us all The boy with the key will save us all",
-            "color": "blue"
-        },
-        {
-            "id": 4.1,
-            "img": "https://media.comicbook.com/2018/12/kingdom-hearts-3-1149243.jpeg",
-            "imgName": "Sora 2",
-            "title": "Sora is Here",
-            "desc": "The boy with the key will save us all",
+            "id": 4,
+            "img": "https://i.ytimg.com/vi/YUDes_czZ3M/maxresdefault.jpg",
+            "imgName": "Som",
+            "title": "Sum Bit",
+            "desc": "wat",
             "color": "purple"
         },
         {
-            "id": 4.2,
-            "img": "https://images-na.ssl-images-amazon.com/images/I/41lZRB1V2yL.jpg",
+            "id": 5,
+            "img": "https://png.pngtree.com/thumb_back/fw800/back_pic/03/87/52/8957d251b0d0605.jpg",
             "imgName": "Sora",
             "title": "Sora is Here",
-            "desc": "The boy with the key will save us all The boy with the key will save us allThe boy with the key will save us all The boy with the key will save us all The boy with the key will save us all The boy with the key will save us all",
-            "color": "blue"
+            "desc": "The boy with the key will save us all",
+            "color": "purple"
         }
     ]
 }

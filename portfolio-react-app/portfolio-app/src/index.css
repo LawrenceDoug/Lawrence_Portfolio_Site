@@ -1,8 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 .disable-link {
   pointer-events: none;
   background-color: #1C191F;
+}
+
+.icon-medium {
+  font-size: 2rem;
+}
+
+.icon-medium:hover {
+  cursor: pointer;
+  color: #8884FF;
 }
 
 /* width */
@@ -29,6 +46,135 @@
   color: #fefefe;
 }
 
+.g-modal {
+  z-index: 1;
+  /* Sit on top */
+  overflow: hidden;
+  position: fixed;
+  /* Stay in place */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  top: 0;
+  left: 0;
+  color: #fefefe;
+}
+
+.modal-padding-right {
+  padding-right: 10px;
+}
+
+.modal-padding-left {
+  padding-left: 10px;
+}
+
+.modalFlex-1 {
+  display: flex;
+  flex-direction: initial;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.modalFlex-2 {
+  display: flex;
+  flex-direction: initial;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.g-modal-content {
+  display: none;
+  flex-direction: column;
+  flex: 1;
+  margin: auto;
+  width: 100%;
+  /* Could be more or less, depending on screen size */
+  height: 100%;
+  background-color: #fefefe;
+}
+
+.g-modal-top {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.g-modal-middle {
+  display: flex;
+  flex-direction: column;
+  flex: 8;
+}
+
+.g-modal-bottom {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.gd-modal-close {
+  align-items: center;
+  color: #fefefe;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.gd-modal-close:hover,
+.gd-modal-close:focus {
+  cursor: pointer;
+  color: #8884FF;
+  text-decoration: none;
+}
+
+.gd-modal-moreInfo {
+  pointer-events: none;
+  color: #fefefe;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.gd-modal-moreInfo:hover {
+  cursor: pointer;
+  color: #8884FF;
+}
+
+.expanded-gd-img {
+  display: flex;
+  flex-direction: initial;
+  flex: 6;
+  justify-content: center;
+  object-fit: cover;
+  margin: auto auto;
+  height: 85%;
+  border: 10px solid #fefefe;
+}
+
+.gd-modal-project-info {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  align-items: center;
+  padding: 1rem;
+}
+
+.gd-modal-info-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.gd-modal-info-desc {
+  font-size: 1.2rem;
+}
+
+/* App.jsx
+      -Main app css
+*/
 body {
   overflow-x: hidden;
   margin: 0;
@@ -51,6 +197,14 @@ body {
   background-color: #8884FF;
 }
 
+/* 
+* About.jsx
+*   -About Me:
+*     --Profile photo
+*     --Job Titles
+*     --Description of ME
+*     --Skills and Experiences
+*/
 .about-container {
   overflow-y: auto;
   overflow-x: hidden;
@@ -67,6 +221,7 @@ body {
   flex-direction: column;
   flex: 1;
   width: 100%;
+  height: 100%;
 }
 
 .personal-pic {
@@ -220,54 +375,49 @@ body {
   font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .personal-pic {
-    width: 200px;
-    height: 200px;
-  }
-
-  .extra-info-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: 100%;
-  }
-
-  .skills-main-title, .experience-main-title {
-    font-size: 1.5rem;
-  }
-}
-.main-work-container {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
+/*
+  Work.jsx
+    -Links for Websites, Graphic Design work, and Photography
+*/
 .portfolio-container {
   padding: 3rem;
-  padding-top: 5rem;
-  padding-left: 3rem;
   height: 100%;
 }
 
 .portfolio-links {
+  display: flex;
+  flex-direction: initial;
+  flex: 1;
+  justify-content: center;
+  margin: auto auto;
   padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .portfolio-link {
+  color: #1C191F;
   position: relative;
-  color: #000;
   padding-bottom: 5px;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: lighter;
+}
+
+.portfolio-link:hover {
+  cursor: pointer;
+  color: #1C191F;
+}
+
+.portfolio-link:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .portfolio-link::before {
-  visibility: hidden;
+  content: "";
   position: absolute;
+  visibility: hidden;
   background-color: #000;
   width: 100%;
   height: 1px;
@@ -279,47 +429,31 @@ body {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.portfolio-link:hover {
-  cursor: pointer;
+.portfolio-active {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #1C191F;
 }
 
-.portfolio-link:hover::before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+/*
+  GraphicDesign.jsx
+    -Image grid for design projects
+*/
+.graphic-design-container {
+  width: 100%;
+  height: 100%;
 }
 
-* {
-  box-sizing: border-box;
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
 }
 
-.img-grid-row {
-  display: -ms-flexbox;
-  /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-.img-grid-column {
-  -ms-flex: 25%;
-  /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.img-grid-column img {
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-  vertical-align: middle;
-  margin-top: 8px;
-}
-
-.img-grid-column img:hover {
-  cursor: pointer;
-  opacity: 0;
+.img-grid img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }
 
 .gd-item {
@@ -327,14 +461,14 @@ body {
   width: 100%;
 }
 
-.graphic-d-img {
+.gd-item-img {
   display: block;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-.inner {
+.gd-item-inner {
   position: absolute;
   padding: 25px;
   width: 100%;
@@ -342,138 +476,131 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  color: #222;
-  background-color: #1D1D1B;
+  color: #1C191F;
+  background-color: #1C191F;
   opacity: 0;
   transition: 400ms;
   text-align: center;
 }
 
-.inner:hover {
+.gd-item-inner:hover {
   cursor: pointer;
   opacity: 1;
 }
 
-.info {
-  color: #fff;
+.gd-item-info {
+  color: #fefefe;
   pointer-events: none;
 }
 
-.gd-info-title {
+.info-title {
   padding-bottom: 10px;
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 800px) {
-  .img-grid-column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .img-grid-column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-/* GRAPHIC DESIGN MODAL ____________________________________________ */
-.g-modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  overflow: hidden;
-  z-index: 1;
-  /* Sit on top */
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  color: #fefefe;
+.info-desc {
+  font-size: 1rem;
 }
 
-/* Modal Content/Box */
-.g-modal-content {
+/*
+  WebDevelopment.jsx
+*/
+.web-development-container {
+  width: 100%;
+  height: 100%;
+}
+
+.projects-container {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: #fefefe;
-  margin: auto;
-  width: 100%;
-  /* Could be more or less, depending on screen size */
-  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.g-modal-top {
+.project-container {
   display: flex;
   flex-direction: row;
   flex: 1;
-  padding-right: 20px;
-  padding-left: 20px;
+  width: 100%;
+  padding-top: 2.9rem;
 }
 
-/* The Close Button */
-.g-modal-close {
-  display: flex;
-  flex-direction: initial;
-  flex: 1;
-  justify-content: flex-end;
-  align-items: center;
-  color: #fefefe;
-  font-size: 50px;
-  font-weight: bold;
+.project-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
 }
 
-.g-modal-close:hover,
-.g-modal-close:focus {
-  cursor: pointer;
-  color: #fab;
-  text-decoration: none;
-}
-
-.g-modal-moreInfo {
-  display: flex;
-  flex-direction: initial;
-  flex: 1;
-  justify-content: flex-start;
-  align-items: center;
-  color: #fefefe;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.g-modal-moreInfo:hover {
-  cursor: pointer;
-  color: #fab;
-}
-
-.expanded-graphic {
-  display: flex;
-  flex-direction: initial;
-  flex: 6;
-  justify-content: center;
-  margin: auto auto;
-  border: 10px solid #fefefe;
-}
-
-.g-project-info {
+.project-description-container {
   display: flex;
   flex-direction: column;
   flex: 3;
-  align-items: center;
-  padding: 1rem;
+  justify-content: flex-start;
+  padding: 25px;
 }
 
-.g-info-title {
+.project-title {
   font-size: 2rem;
+  font-weight: bold;
 }
 
-.g-info-desc {
+.project-description {
   font-size: 1.2rem;
+  font-weight: lighter;
+  flex-wrap: wrap;
+}
+
+.btn-container {
+  padding-top: 25px;
+}
+
+.web-btn {
+  color: #fefefe;
+  background-color: #222140;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.web-btn:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .img-grid {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .extra-info-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+  }
+
+  .skills-main-title, .experience-main-title {
+    font-size: 1.5rem;
+  }
+
+  .img-grid {
+    grid-template-columns: auto;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    padding-top: 1.9rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .personal-pic {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

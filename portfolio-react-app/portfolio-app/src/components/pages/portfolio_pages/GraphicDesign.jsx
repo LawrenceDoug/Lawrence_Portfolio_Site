@@ -1,174 +1,141 @@
 //Imports
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 // graphic_design_work JSON
 const work = require('../../../json/graphic_design_work');
 const myWork = work.gd_work;
 
-var imgSrc;
-var title;
-var description;
-var color;
+// Graphic Design item variables
+var id;
+
+// Slideshow
+var slideIndex = 1;
+
+const showSlides = (n) => {
+    var i;
+    var slides = document.getElementsByClassName('g-modal-content');
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slides[slideIndex - 1].style.display = 'flex';
+}
 
 class GraphicDesign extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            modal: false
+            modal: false,
+            projects: []
         }
     }
 
     squareClicked(e) {
         this.setState({ modal: true });
-        imgSrc = e.target.parentElement.children.item(0).src;
-        title = e.target.parentElement.children.item(1).children.item(0).textContent;
-        description = e.target.parentElement.children.item(1).children.item(1).textContent;
-        color = e.target.parentElement.children.item(1).children.item(2).textContent;
-        console.log(e.target);
+        id = e.target.parentElement.children.item(1).children.item(0).textContent;
+
+        showSlides(slideIndex = id);
+        document.body.style.overflow = 'hidden';
+        console.log(slideIndex);
     }
 
     closeModal() {
         this.setState({ modal: false });
+        document.body.style.overflow = 'auto';
+    }
+
+    plusSlides() {
+        console.log(slideIndex);
+        showSlides(slideIndex += 1);
+        console.log(slideIndex);
+    }
+
+    minusSlides() {
+        console.log(slideIndex);
+        showSlides(slideIndex -= 1);
+        console.log(slideIndex);
+    }
+
+    componentDidMount() {
+        var myProjects = [];
+        myWork.map((project) => {
+            myProjects.push(project);
+            return myProjects;
+        })
+        this.setState({ projects: myProjects });
     }
 
     render() {
         return (
-            <div>
-                <div className='img-grid-row'>
-                    <div className='img-grid-column'>
-                        {
-                            myWork.map((project) => {
-                                return (
-                                    project.id < 2 ?
-                                        <div key={project.id} className='gd-item' style={{ backgroundColor: 'transparent' }}>
-                                            <div>
-                                                <img className='graphic-d-img' src={project.img} alt={project.imgName} />
-                                                <span style={{ display: 'none' }}>
-                                                    <h2>{project.title}</h2>
-                                                    <p>{project.desc}</p>
-                                                    <p style={{ display: 'none' }}>{project.color}</p>
-                                                </span>
-                                                <span onClick={(e) => this.squareClicked(e)} className='inner' style={{ backgroundColor: project.color }}>
-                                                    <img style={{ display: 'none' }} src={project.img} />
-                                                    <span className='info'>
-                                                        <h2 className='gd-info-title'>{project.title}</h2>
-                                                        <p className='gd-info-desc'>{project.desc}</p>
-                                                        <p style={{ display: 'none' }}>{project.color}</p>
-                                                    </span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        :
-                                        <div key={project.id + '-none'}></div>
-                                )
-                            })
-                        }
-                    </div>
-                    <div className='img-grid-column'>
-                        {
-                            myWork.map((project) => {
-                                return (
-                                    project.id < 3 && project.id > 2 ?
-                                        <div key={project.id} className='gd-item' style={{ backgroundColor: 'transparent' }}>
-                                            <div>
-                                                <img className='graphic-d-img' src={project.img} alt={project.imgName} />
-                                                <span style={{ display: 'none' }}>
-                                                    <h2>{project.title}</h2>
-                                                    <p>{project.desc}</p>
-                                                    <p style={{ display: 'none' }}>{project.color}</p>
-                                                </span>
-                                                <span onClick={(e) => this.squareClicked(e)} className='inner' style={{ backgroundColor: project.color }}>
-                                                    <img style={{ display: 'none' }} src={project.img} />
-                                                    <span className='info'>
-                                                        <h2 className='gd-info-title'>{project.title}</h2>
-                                                        <p className='gd-info-desc'>{project.desc}</p>
-                                                        <p style={{ display: 'none' }}>{project.color}</p>
-                                                    </span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        :
-                                        <div key={project.id + '-none'}></div>
-                                )
-                            })
-                        }
-                    </div>
-                    <div className='img-grid-column'>
-                        {
-                            myWork.map((project) => {
-                                return (
-                                    project.id < 4 && project.id > 3 ?
-                                        <div key={project.id} className='gd-item' style={{ backgroundColor: 'transparent' }}>
-                                            <div>
-                                                <img className='graphic-d-img' src={project.img} alt={project.imgName} />
-                                                <span style={{ display: 'none' }}>
-                                                    <h2>{project.title}</h2>
-                                                    <p>{project.desc}</p>
-                                                    <p style={{ display: 'none' }}>{project.color}</p>
-                                                </span>
-                                                <span onClick={(e) => this.squareClicked(e)} className='inner' style={{ backgroundColor: project.color }}>
-                                                    <img style={{ display: 'none' }} src={project.img} />
-                                                    <span className='info'>
-                                                        <h2 className='gd-info-title'>{project.title}</h2>
-                                                        <p className='gd-info-desc'>{project.desc}</p>
-                                                        <p style={{ display: 'none' }}>{project.color}</p>
-                                                    </span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        :
-                                        <div key={project.id + '-none'}></div>
-                                )
-                            })
-                        }
-                    </div>
-                    <div className='img-grid-column'>
-                        {
-                            myWork.map((project) => {
-                                return (
-                                    project.id < 5 && project.id > 4 ?
-                                        <div key={project.id} className='gd-item' style={{ backgroundColor: 'transparent' }}>
-                                            <div>
-                                                <img className='graphic-d-img' src={project.img} alt={project.imgName} />
-                                                <span style={{ display: 'none' }}>
-                                                    <h2>{project.title}</h2>
-                                                    <p>{project.desc}</p>
-                                                    <p style={{ display: 'none' }}>{project.color}</p>
-                                                </span>
-                                                <span onClick={(e) => this.squareClicked(e)} className='inner' style={{ backgroundColor: project.color }}>
-                                                    <img style={{ display: 'none' }} src={project.img} />
-                                                    <span className='info'>
-                                                        <h2 className='gd-info-title'>{project.title}</h2>
-                                                        <p className='gd-info-desc'>{project.desc}</p>
-                                                        <p style={{ display: 'none' }}>{project.color}</p>
-                                                    </span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        :
-                                        <div key={project.id + '-none'}></div>
-                                )
-                            })
-                        }
-                    </div>
+            <div className='graphic-design-container'>
+                <div className='img-grid'>
+                    {
+                        myWork.map((project) => {
+                            return (
+                                <div key={project.id} className='gd-item' style={{ backgroundColor: 'transparent' }}>
+                                    <div>
+                                        <img className='gd-item-img' src={project.img} alt={project.imgName} />
+                                        <span style={{ display: 'none' }}>
+                                            <p>{project.id}</p>
+                                        </span>
+                                        <span onClick={(e) => this.squareClicked(e)} className='gd-item-inner' style={{ backgroundColor: project.color }}>
+                                            <img style={{ display: 'none' }} alt={''} src={project.img} />
+                                            <span className='gd-item-info'>
+                                                <p style={{ display: 'none' }}>{project.id}</p>
+                                                <h2 className='info-title'>{project.title}</h2>
+                                                <p className='info-desc'>{project.desc}</p>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
+
                 <div id="myModal" className="g-modal" style={{
                     display: this.state.modal ?
                         'block' : 'none'
                 }}>
-                    <div className='g-modal-content' style={{ backgroundColor: color }}>
-                        <div className='g-modal-top'>
-                            <div className="g-modal-moreInfo"><FontAwesomeIcon icon={faInfoCircle} /></div>
-                            <div onClick={this.closeModal.bind(this)} className="g-modal-close">&times;</div>
-                        </div>
-                        <img className='expanded-graphic' src={imgSrc} width='50%' />
-                        <div className='g-project-info'>
-                            <div className='g-info-title'>{title}</div>
-                            <div className='g-info-desc'>{description}</div>
-                        </div>
-                    </div>
+                    {
+                        this.state.projects.map((project) => {
+                            return (
+                                <div key={project.id} className='g-modal-content' style={{ backgroundColor: project.color }}>
+                                    <div className='g-modal-top'>
+                                        <div className='modalFlex-1'>
+                                            <div className="gd-modal-moreInfo"><FontAwesomeIcon icon={faInfoCircle} /></div>
+                                        </div>
+                                        <div className='modalFlex-2'>
+                                            <div onClick={this.closeModal.bind(this)} className="gd-modal-close">&times;</div>
+                                        </div>
+                                    </div>
+                                    <div className='g-modal-middle'>
+                                        <p style={{ display: 'none' }}>{project.id}</p>
+                                        <img className='expanded-gd-img' alt={project.imgName} src={project.img} width='50%' />
+                                        <div className='gd-modal-project-info'>
+                                            <div className='gd-modal-info-title'>{project.title}</div>
+                                            <div className='gd-modal-info-desc'>{project.desc}</div>
+                                        </div>
+                                    </div>
+                                    <div className='g-modal-bottom'>
+                                        <div className='modalFlex-2 modal-padding-right'>
+                                            <FontAwesomeIcon
+                                                onClick={this.minusSlides}
+                                                className='icon-medium' icon={faArrowLeft} />
+                                        </div>
+                                        <div className='modalFlex-1 modal-padding-left'>
+                                            <FontAwesomeIcon
+                                                onClick={this.plusSlides}
+                                                className='icon-medium' icon={faArrowRight} />
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
         );

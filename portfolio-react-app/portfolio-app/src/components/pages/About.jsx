@@ -9,15 +9,12 @@ const myExperiences = experiences.experiences;
 const skills = require('../../json/skills');
 const mySkills = skills.skills;
 
-//Images
-const Lawrence = require('../../assets/images/personal/Lawrence.jpg');
-
 class About extends Component {
     render() {
         return (
             <div className='about-container'>
                 <div className='personal-info-container'>
-                    <img className='personal-pic' src={Lawrence} alt="It's me!" />
+                    <img className='personal-pic' src='../assets/images/personal/Lawrence.jpg' alt="It's me!" />
                     <div className='personal-info'>
                         <div className='name'>Lawrence Douglas</div>
                         <div className='titles'>Web Dev | Graphic Design | UI/UX</div>
@@ -32,19 +29,47 @@ class About extends Component {
                 </div>
                 <div className='extra-info-container'>
                     <div className='skills-container'>
-                        <div className='skills-main-title'>SKILLS</div>
+                        <div className='skills-main-title'>CORE SKILLS</div>
                         <div className='skills'>
                             {
                                 mySkills.map((skill) => {
-                                    return (
-                                        <a key={skill.id} className='skill-link' href={skill.link} alt={skill.title} target='_blank' rel="noopener noreferrer">
-                                            <div className='skill-padding'>
-                                                <div className='skill'>
-                                                    {skill.title}
+                                    if (skill.type === 'core') {
+                                        return (
+                                            <a key={skill.id} className='skill-link' href={skill.link} alt={skill.title} target='_blank' rel='noopener noreferrer'>
+                                                <div className='skill-padding'>
+                                                    <div className='skill'>
+                                                        {skill.title}
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    )
+                                            </a>
+                                        )
+                                    } else {
+                                        return (
+                                            <span key={skill.id + '-empty'}></span>
+                                        )
+                                    }
+                                })
+                            }
+                        </div>
+                        <div className='skills-main-title'>SOFT SKILLS</div>
+                        <div className='skills'>
+                            {
+                                mySkills.map((skill) => {
+                                    if (skill.type === 'soft') {
+                                        return (
+                                            <a key={skill.id} className='skill-link' href={skill.link} alt={skill.title} target='_blank' rel='noopener noreferrer'>
+                                                <div className='skill-padding'>
+                                                    <div className='skill'>
+                                                        {skill.title}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        )
+                                    } else {
+                                        return (
+                                            <span key={skill.id + '-empty'}></span>
+                                        )
+                                    }
                                 })
                             }
                         </div>
@@ -56,7 +81,7 @@ class About extends Component {
                                 return (
                                     <div key={experience.id} className={
                                         experience.id % 2 === 0 ?
-                                            'experience1' : 'experience2'
+                                            'experience2' : 'experience1'
                                     }>
                                         <div className='experience-title'>{experience.title}</div>
                                         <div className='experience-location'>{experience.location}</div>

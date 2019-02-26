@@ -1,4 +1,6 @@
-// App.jsx
+/* App.jsx
+      -Main app css
+*/
 body {
     overflow-x: hidden;
     margin: 0;
@@ -20,8 +22,16 @@ body {
     height: 100%;
     background-color: $primary-color;
   }
+//_______________________________________________________________________
 
-// About.jsx
+/* 
+* About.jsx
+*   -About Me:
+*     --Profile photo
+*     --Job Titles
+*     --Description of ME
+*     --Skills and Experiences
+*/
 .about-container {
   overflow-y: auto;
   overflow-x: hidden;
@@ -38,6 +48,7 @@ body {
   flex-direction: column;
   flex: 1;
   width: 100%;
+  height: 100%;
 }
 
 .personal-pic {
@@ -190,15 +201,211 @@ body {
   width: 95%;
   font-size: 1.2rem;
 }
+//__________________________________________________________________________
+/*
+  Work.jsx
+    -Links for Websites, Graphic Design work, and Photography
+*/
+.portfolio-container {
+  padding: 3rem;
+  height: 100%;
+}
 
-// About.jsx Skill/Experience Section
-@media only screen and (max-width: 600px) {
-  
-.personal-pic {
-    width: 200px;
-    height: 200px;
+.portfolio-links {
+  display: flex;
+  flex-direction: initial;
+  flex: 1;
+  justify-content: center;
+  margin: auto auto;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.portfolio-link {
+  color: $portfolio-black;
+  position: relative;
+  padding-bottom: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.portfolio-link:hover {
+  cursor: pointer;
+  color: $portfolio-black;
+}
+
+.portfolio-link:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.portfolio-link::before {
+  content: "";
+  position: absolute;
+  visibility: hidden;
+  background-color: #000;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.portfolio-active {
+  padding-bottom: 3px;
+  border-bottom: 1px solid $portfolio-black;
+}
+//_________________________________________________________________________
+
+/*
+  GraphicDesign.jsx
+    -Image grid for design projects
+*/
+.graphic-design-container {
+  width: 100%;
+  height: 100%;
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+
+.img-grid img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.gd-item {
+  position: relative;
+  width: 100%;
+}
+
+.gd-item-img {
+    display: block;
+    margin: 0;
+    padding: 0; 
+    width: 100%;
+}
+
+.gd-item-inner {
+  position: absolute;
+  padding: 25px;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: $portfolio-black;
+  background-color: $portfolio-black; 
+  opacity: 0;
+  transition: 400ms;
+  text-align: center;
+}
+
+.gd-item-inner:hover {
+cursor: pointer;
+opacity: 1;
+}
+
+.gd-item-info {
+color: $portfolio-white;
+pointer-events: none;
+}
+
+.info-title {
+padding-bottom: 10px;
+font-size: 1.5rem;
+}
+
+.info-desc {
+font-size: 1rem;
+}
+//_____________________________________________________________________
+/*
+  WebDevelopment.jsx
+*/
+.web-development-container {
+  width: 100%;
+  height: 100%;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+  padding-top: 2.9rem;
+}
+
+.project-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+}
+
+.project-description-container {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  justify-content: flex-start;
+  padding: 25px;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  flex-wrap: wrap;
+}
+
+.btn-container {
+  padding-top: 25px;
+}
+
+.web-btn {
+  color: $portfolio-white;
+  background-color: $secondary-color;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.web-btn:hover {
+  cursor: pointer;
+}
+//_____________________________________________________________________
+
+@media only screen and (max-width: 1000px) {
+// GraphicDesign.jsx_____________________________
+  .img-grid {
+    grid-template-columns: auto auto;
   }
+  //_____________________________________________
+}
 
+@media only screen and (max-width: 600px) {
+// About.jsx_____________________________________
   .extra-info-container {
     display: flex;
     flex-direction: column;
@@ -208,5 +415,27 @@ body {
 
   .skills-main-title, .experience-main-title {
     font-size: 1.5rem;
+  }
+  //_____________________________________________
+  // GraphicDesign.jsx___________________________
+  .img-grid {
+    grid-template-columns: auto;
+  }
+  //_____________________________________________
+  // WebDevelopment.jsx__________________________
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    padding-top: 1.9rem;
+  }
+  //_____________________________________________
+}
+
+@media only screen and (max-width: 400px) {
+  .personal-pic {
+    width: 200px;
+    height: 200px;
   }
 }

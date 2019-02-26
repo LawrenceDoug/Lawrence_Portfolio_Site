@@ -19,7 +19,8 @@
     "sass": "^1.16.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run runapp\" \"npm run sass-watch\"", 
+    "runapp": "react-scripts start",
     "sass-watch": "sass --watch src/sass/index.scss src/index.css",
     "build": "react-scripts build",
     "test": "react-scripts test",
