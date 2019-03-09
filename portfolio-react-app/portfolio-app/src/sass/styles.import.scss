@@ -17,7 +17,15 @@ a {
 
 .icon-medium:hover {
   cursor: pointer;
-  color: $primary-color;
+  color: $secondary-color;
+}
+
+.parallax {
+  min-height: 1080px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 // Custom Scroll Bar________________________________
@@ -126,7 +134,7 @@ a {
   .gd-modal-close:hover,
   .gd-modal-close:focus {
     cursor: pointer;
-    color: $primary-color;
+    color: $secondary-color;
     text-decoration: none;
   }
 
@@ -140,7 +148,7 @@ a {
 
   .gd-modal-moreInfo:hover {
     cursor: pointer;
-    color: $primary-color;
+    color: $secondary-color;
   }
 
   // Modal Middle

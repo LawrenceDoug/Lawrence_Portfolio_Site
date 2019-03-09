@@ -1,0 +1,380 @@
+// ANIMATIONS
+@keyframes animatetop {
+    from {left: -1000px; opacity: 0}
+    to {left: 0; opacity: 1}
+}
+
+@keyframes animatestop {
+    from {left: 0; opacity: 1}
+    to {left: -1000px; opacity: 0}
+}
+//______________________________________________________________--
+
+.nav {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: 0;
+    padding: 1rem;
+    background-color: transparent;
+}
+
+// NAV LOGO
+.nav-logo {
+    display: flex;
+    flex-direction: initial;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.logo {
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 5px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.logo:hover {
+    color: #000;
+}
+
+.logo:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.logo::before {
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+//NAV LINKS
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+} 
+
+.nav-link {
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.nav-link:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.nav-link::before {
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:active {
+    color: #fab;
+    padding-bottom: 5px;
+    border-bottom: 2px solid currentColor
+}
+
+// CONTACT
+.nav-contact {
+    display: flex;
+    flex-direction: initial;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.contact {
+    cursor: pointer;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.contact:hover {
+    color: #000;
+}
+
+.contact:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.contact::before {
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+// SOCIAL
+.social-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    padding: 5px;
+    text-align: center;
+}
+
+.social {
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.icon {
+    position: relative;
+    padding: 5px;
+    color: $secondary-color;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.icon:hover {
+    color: $icon-color;
+}
+
+.icon:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.icon::before {
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $icon-color;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+//______________________________________________________________
+// MODAL
+.modal {
+    z-index: 10; /* Sit on top */
+    position: fixed; /* Stay in place */
+    overflow-y: auto; /* Enable scroll if needed */
+    overflow-x: hidden;
+    width: 90vw; /* Full width */
+    height: 100%; /* Full height */
+    top: 0;
+    left: 0;
+    background-color: $portfolio-white;
+    box-shadow: 5px 0px 20px $secondary-color;
+    animation-name: animatetop;
+    animation-duration: 1s;
+} 
+
+.modal-content {
+    color: #000;
+    background-color: $portfolio-white;
+    margin: auto;
+    padding: 25px;
+}
+
+.close {
+    color: $secondary-color;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: $icon-color;
+    text-decoration: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 5px;
+}
+
+.flex-row-column {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 5px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 5px;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 40px;
+}
+
+.label-padding {
+    padding-bottom: 5px;
+}
+
+.names {
+    display: flex;
+    flex-direction:row;
+    flex: 1;
+}
+
+.nameBox {
+    display: flex;
+    flex: 1;
+    height: 6vh;
+    padding-left: 1rem;
+    color: $primary-color;
+    font-size: 1rem;
+    border: 3px solid grey;
+}
+
+.nameBox:focus {
+    border: 2px solid $primary-color;
+}
+
+.send-btn {
+    width: 100%;
+    height: 9vh;
+    padding: 10x;
+    color: #000;
+    background-color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    border: 3px solid grey;
+    transition: all 0.8s;
+}
+
+.send-btn:hover {
+    cursor: pointer;
+    color: $secondary-color;
+    background-color: $icon-color;
+}
+
+.longBox {
+    display: flex;
+    flex: 1;
+    color: #fab;
+    height: 6vh;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border: 3px solid grey;
+}
+
+.longBox:focus {
+    border: 3px solid #fab;
+}
+
+.bigBox {
+    display: flex;
+    flex: 1;
+    color: #fab;
+    height: 10vh;
+    padding: 5px;
+    font-size: 1.2rem;
+    border: 3px solid grey;
+}
+
+.bigBox:focus {
+    border: 2px solid #fab;
+}
+
+//______________________________________________________________
+@media only screen and (max-width: 1000px) {
+    .nav {
+        position: relative;
+        flex-direction: column;
+        background-color: $primary-color;
+    }
+
+    .nav-logo {
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .nav-links {
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .nav-contact {
+        padding: 1rem;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-row-column {
+        flex-direction: column;
+    }
+
+    .names {
+        flex-direction: column;
+    }
+}

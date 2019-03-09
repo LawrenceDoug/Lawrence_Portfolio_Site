@@ -19,7 +19,15 @@ a {
 
 .icon-medium:hover {
   cursor: pointer;
-  color: #8884FF;
+  color: #222140;
+}
+
+.parallax {
+  min-height: 1080px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* width */
@@ -29,7 +37,7 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #8884FF;
+  background: #E6E6FA;
 }
 
 /* Handle */
@@ -128,7 +136,7 @@ a {
 .gd-modal-close:hover,
 .gd-modal-close:focus {
   cursor: pointer;
-  color: #8884FF;
+  color: #222140;
   text-decoration: none;
 }
 
@@ -141,7 +149,7 @@ a {
 
 .gd-modal-moreInfo:hover {
   cursor: pointer;
-  color: #8884FF;
+  color: #222140;
 }
 
 .expanded-gd-img {
@@ -194,7 +202,29 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #8884FF;
+  background-color: #E6E6FA;
+}
+
+/*
+  Home.jsx
+*/
+.home-container {
+  width: 100%;
+  height: 100%;
+  background-color: #E6E6FA;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.mountain-img {
+  position: relative;
+  margin-top: 25%;
 }
 
 /* 
@@ -281,7 +311,7 @@ body {
 }
 
 .skills-main-title, .experience-main-title {
-  color: #8884FF;
+  color: #E6E6FA;
   background-color: #222140;
   padding: 10px;
   font-size: 2rem;
@@ -317,7 +347,7 @@ body {
 
 .skill:hover {
   cursor: pointer;
-  color: #8884FF;
+  color: #E6E6FA;
   background-color: #222140;
 }
 
@@ -339,7 +369,7 @@ body {
 
 .experience2 {
   padding-bottom: 15px;
-  background-color: #8884FF;
+  background-color: #E6E6FA;
 }
 
 .experience-title {
@@ -506,12 +536,15 @@ body {
   WebDevelopment.jsx
 */
 .web-development-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
   width: 100%;
   height: 100%;
 }
 
 .projects-container {
-  display: flex;
+  display: none;
   flex-direction: column;
   flex: 1;
   justify-content: center;
@@ -567,6 +600,15 @@ body {
   cursor: pointer;
 }
 
+.arrowFlex {
+  display: flex;
+  flex-direction: initial;
+  flex: 0.1;
+  justify-content: center;
+  align-items: center;
+  color: #fefefe;
+}
+
 @media only screen and (max-width: 1000px) {
   .img-grid {
     grid-template-columns: auto auto;
@@ -600,6 +642,392 @@ body {
   .personal-pic {
     width: 200px;
     height: 200px;
+  }
+}
+@keyframes animatetop {
+  from {
+    left: -1000px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatestop {
+  from {
+    left: 0;
+    opacity: 1;
+  }
+  to {
+    left: -1000px;
+    opacity: 0;
+  }
+}
+.nav {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: 0;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: initial;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.logo {
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.logo:hover {
+  color: #000;
+}
+
+.logo:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.logo::before {
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-link {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.nav-link:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.nav-link::before {
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:active {
+  color: #fab;
+  padding-bottom: 5px;
+  border-bottom: 2px solid currentColor;
+}
+
+.nav-contact {
+  display: flex;
+  flex-direction: initial;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.contact {
+  cursor: pointer;
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.contact:hover {
+  color: #000;
+}
+
+.contact:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.contact::before {
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  padding: 5px;
+  text-align: center;
+}
+
+.social {
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.icon {
+  position: relative;
+  padding: 5px;
+  color: #222140;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.icon:hover {
+  color: #8884FF;
+}
+
+.icon:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.icon::before {
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #8884FF;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.modal {
+  z-index: 10;
+  /* Sit on top */
+  position: fixed;
+  /* Stay in place */
+  overflow-y: auto;
+  /* Enable scroll if needed */
+  overflow-x: hidden;
+  width: 90vw;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  top: 0;
+  left: 0;
+  background-color: #fefefe;
+  box-shadow: 5px 0px 20px #222140;
+  animation-name: animatetop;
+  animation-duration: 1s;
+}
+
+.modal-content {
+  color: #000;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 25px;
+}
+
+.close {
+  color: #222140;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: #8884FF;
+  text-decoration: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 5px;
+}
+
+.flex-row-column {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 5px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 5px;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 40px;
+}
+
+.label-padding {
+  padding-bottom: 5px;
+}
+
+.names {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.nameBox {
+  display: flex;
+  flex: 1;
+  height: 6vh;
+  padding-left: 1rem;
+  color: #E6E6FA;
+  font-size: 1rem;
+  border: 3px solid grey;
+}
+
+.nameBox:focus {
+  border: 2px solid #E6E6FA;
+}
+
+.send-btn {
+  width: 100%;
+  height: 9vh;
+  padding: 10x;
+  color: #000;
+  background-color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  border: 3px solid grey;
+  transition: all 0.8s;
+}
+
+.send-btn:hover {
+  cursor: pointer;
+  color: #222140;
+  background-color: #8884FF;
+}
+
+.longBox {
+  display: flex;
+  flex: 1;
+  color: #fab;
+  height: 6vh;
+  padding-left: 1rem;
+  font-size: 1rem;
+  border: 3px solid grey;
+}
+
+.longBox:focus {
+  border: 3px solid #fab;
+}
+
+.bigBox {
+  display: flex;
+  flex: 1;
+  color: #fab;
+  height: 10vh;
+  padding: 5px;
+  font-size: 1.2rem;
+  border: 3px solid grey;
+}
+
+.bigBox:focus {
+  border: 2px solid #fab;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    position: relative;
+    flex-direction: column;
+    background-color: #E6E6FA;
+  }
+
+  .nav-logo {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .nav-links {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .nav-contact {
+    padding: 1rem;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .flex-row-column {
+    flex-direction: column;
+  }
+
+  .names {
+    flex-direction: column;
   }
 }
 

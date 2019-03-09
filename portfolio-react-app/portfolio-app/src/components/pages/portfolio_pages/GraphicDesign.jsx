@@ -66,6 +66,7 @@ class GraphicDesign extends Component {
             return myProjects;
         })
         this.setState({ projects: myProjects });
+        // document.body.style.overflow = 'auto';
     }
 
     render() {

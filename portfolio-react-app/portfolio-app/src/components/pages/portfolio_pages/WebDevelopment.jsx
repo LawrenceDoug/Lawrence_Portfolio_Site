@@ -1,29 +1,65 @@
 // Import 
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 // web_projects JSON
 const work = require('../../../json/web_projects');
 const myWork = work.web_work;
 
+var i;
+var slides = document.getElementsByClassName('projects-container');
 
+// Slideshow
+var slideIndex = 1;
+
+const showSlides = (n) => {
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slides[slideIndex - 1].style.display = 'flex';
+}
 
 class WebDevelopment extends Component {
-
-    // componentDidMount() {
-    //     document.body.style.overflow = 'hidden';
+    // constructor(props) {
+    //     super(props);
     // }
 
-    // componentWillUnmount() {
-    //     document.body.style.overflow = 'auto';
-    // }
+    plusSlides() {
+        console.log(slideIndex);
+        showSlides(slideIndex += 1);
+        console.log(slideIndex);
+    }
+
+    minusSlides() {
+        console.log(slideIndex);
+        showSlides(slideIndex -= 1);
+        console.log(slideIndex);
+    }
+
+    componentDidMount() {
+        showSlides(slideIndex);
+        // document.body.style.overflow = 'hidden';
+    }
+
+    componentWillUnmount() {
+        // document.body.style.overflow = 'auto';
+    }
 
     render() {
         return (
             <div className='web-development-container'>
+                <div className='arrowFlex'>
+                    <FontAwesomeIcon
+                        onClick={this.minusSlides}
+                        className='icon-medium' icon={faArrowLeft} />
+                </div>
                 {
                     myWork.map((project) => {
                         return (
-                            <div className='projects-container'>
+                            <div key={project.id} className='projects-container'>
                                 <div className='project-container'>
                                     <img className='project-img' src={project.img1} alt={project.img1Name} />
                                     <div className='project-description-container'>
@@ -52,6 +88,11 @@ class WebDevelopment extends Component {
                         )
                     })
                 }
+                <div className='arrowFlex'>
+                    <FontAwesomeIcon
+                        onClick={this.plusSlides}
+                        className='icon-medium' icon={faArrowRight} />
+                </div>
             </div>
         );
     }
