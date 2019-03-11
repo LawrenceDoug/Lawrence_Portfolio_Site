@@ -110,10 +110,27 @@
     transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-link:active {
-    color: #fab;
+.active {
+    color: $icon-color;
     padding-bottom: 5px;
     border-bottom: 2px solid currentColor
+}
+
+.back-to-top-btn {
+    z-index: 50;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 40px;
+    color: $portfolio-white;
+    background-color: $icon-color;
+}
+
+.back-to-top-btn:hover {
+    cursor: pointer;
 }
 
 // CONTACT

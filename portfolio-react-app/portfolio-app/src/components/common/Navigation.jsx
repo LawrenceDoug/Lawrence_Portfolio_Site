@@ -30,6 +30,9 @@ class Navigation extends Component {
     handleContactModal() {
         this.setState({ modal: true });
         var contact = document.getElementById('contact');
+        contact.style.color = '#8884FF';  
+        contact.style.paddingBottom = '5px';
+        contact.style.borderBottom = '2px solid currentColor';     
         contact.style.pointerEvents = 'none';
         var location = document.getElementById('location');
         location.style.pointerEvents = 'none';
@@ -50,11 +53,7 @@ class Navigation extends Component {
             email: '',
             subject: '',
             description: ''
-        });
-        var contact = document.getElementById('contact');
-        contact.style.pointerEvents = 'auto';
-        var location = document.getElementById('location');
-        location.style.pointerEvents = 'auto';
+        });       
         var modal = document.getElementById('myModal').style;
         modal.animation = 'animatestop';
         modal.animationDuration = '1s';
@@ -63,6 +62,13 @@ class Navigation extends Component {
         setTimeout(() => {
             this.setState({ modal: false });
             localStorage.setItem('modal', 'false');
+            var contact = document.getElementById('contact');
+            contact.style.pointerEvents = 'auto';
+            contact.style.color = '';  
+            contact.style.paddingBottom = '';
+            contact.style.borderBottom = '';     
+            var location = document.getElementById('location');
+            location.style.pointerEvents = 'auto';
         }, 1000)
     }
 
@@ -75,10 +81,10 @@ class Navigation extends Component {
         return (
             <div className='nav'>
                 <div className='nav-logo'>
-                    <NavLink to='/' className='logo'>LAWRENCE DOUGLAS</NavLink>
+                    <NavLink to='/' className='logo' exact={true}>LAWRENCE DOUGLAS</NavLink>
                 </div>
                 <div className='nav-links'>
-                    <NavLink to='/' className='nav-link'>Intro</NavLink>
+                    <NavLink to='/' className='nav-link' exact={true}>Intro</NavLink>
                     <NavLink to='/about' className='nav-link'>About</NavLink>
                     <NavLink to='/work' className='nav-link'>Work</NavLink>
                     <NavLink to={Resume} className='nav-link' target='_blank'>Resume</NavLink>

@@ -17,10 +17,15 @@ import About from './components/pages/About';
 import Work from './components/pages/Work';
 
 class App extends Component {
+  backToTop() {
+    window.scrollTo = 0;
+    console.log(window.screenTop)
+  }
   render() {
     return (
-      <div className='body'>
-        <Navigation className='navigation'/>
+      <div id='body' className='body'>
+        <span className='back-to-top-btn' onClick={this.backToTop}>^</span>
+        <Navigation className='navigation' />
         <div className='main-container'>
           <Switch>
             <Route path="/" component={Home} exact />

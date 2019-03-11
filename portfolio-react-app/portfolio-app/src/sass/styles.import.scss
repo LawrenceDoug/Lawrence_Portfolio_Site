@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+.body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -54,128 +61,3 @@ a {
     color: $portfolio-white;
   }
 //__________________________________________________
-
-// GRAPHIC DESIGN MODAL ____________________________________________ 
-  .g-modal {
-    z-index: 1; /* Sit on top */
-    overflow: hidden;
-    position: fixed; /* Stay in place */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    top: 0;
-    left: 0;
-    color: $portfolio-white;
-  }
-
-  .modal-padding-right {
-    padding-right: 10px;
-  }
-
-  .modal-padding-left {
-    padding-left: 10px;
-  }
-
-  .modalFlex-1 {
-    display: flex;
-    flex-direction: initial;
-    flex: 1;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .modalFlex-2 {
-    display: flex;
-    flex-direction: initial;
-    flex: 1;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  // Modal Content/Box
-  .g-modal-content {
-    display: none;
-    flex-direction: column;
-    flex: 1;
-    margin: auto;
-    width: 100%; /* Could be more or less, depending on screen size */
-    height: 100%;
-    background-color: $portfolio-white;
-  }
-  
-  .g-modal-top {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  .g-modal-middle {
-    display: flex;
-    flex-direction: column;
-    flex: 8;
-  }
-  
-  .g-modal-bottom {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-  }
-
-  // The Close Button 
-  .gd-modal-close {
-    align-items: center;
-    color: $portfolio-white;
-    font-size: 50px;
-    font-weight: bold;
-  }
-  
-  .gd-modal-close:hover,
-  .gd-modal-close:focus {
-    cursor: pointer;
-    color: $secondary-color;
-    text-decoration: none;
-  }
-
-  // Modal Top
-  .gd-modal-moreInfo {
-    pointer-events: none;
-    color: $portfolio-white;
-    font-size: 35px;
-    font-weight: bold;
-  }
-
-  .gd-modal-moreInfo:hover {
-    cursor: pointer;
-    color: $secondary-color;
-  }
-
-  // Modal Middle
-  .expanded-gd-img {
-    display: flex;
-    flex-direction: initial;
-    flex: 6;
-    justify-content: center;
-    object-fit: cover;
-    margin: auto auto;
-    height: 85%;
-    border: 10px solid $portfolio-white;
-  }
-  
-  .gd-modal-project-info {
-    display: flex;
-    flex-direction: column;
-    flex: 3;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  .gd-modal-info-title {
-    font-weight: bold;
-    font-size: 2rem;
-  }
-
-  .gd-modal-info-desc {
-    font-size: 1.2rem;
-  }

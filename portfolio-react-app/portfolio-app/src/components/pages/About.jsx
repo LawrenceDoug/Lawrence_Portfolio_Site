@@ -9,7 +9,7 @@ const myExperiences = experiences.experiences;
 const skills = require('../../json/skills');
 const mySkills = skills.skills;
 
-class About extends Component {
+class About extends Component {    
     render() {
         return (
             <div className='about-container'>

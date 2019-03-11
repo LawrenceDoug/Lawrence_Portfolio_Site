@@ -19,7 +19,7 @@
     "sass": "^1.16.1"
   },
   "scripts": {
-    "runapp": "concurrently \"npm run start\" \"npm run sass-watch\"", 
+    "runapp": "concurrently \"npm run start\" \"npm run sass-watch\"",
     "start": "set PORT=8000 & react-scripts start",
     "sass-watch": "sass --watch src/sass/index.scss src/index.css",
     "build": "react-scripts build",

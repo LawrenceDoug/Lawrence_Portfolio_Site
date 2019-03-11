@@ -23,10 +23,6 @@ const showSlides = (n) => {
 }
 
 class WebDevelopment extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
-
     plusSlides() {
         console.log(slideIndex);
         showSlides(slideIndex += 1);
@@ -41,11 +37,6 @@ class WebDevelopment extends Component {
 
     componentDidMount() {
         showSlides(slideIndex);
-        // document.body.style.overflow = 'hidden';
-    }
-
-    componentWillUnmount() {
-        // document.body.style.overflow = 'auto';
     }
 
     render() {
@@ -66,7 +57,7 @@ class WebDevelopment extends Component {
                                         <div className='project-title'>{project.title1}</div>
                                         <div className='project-description'>{project.desc1}</div>
                                         <div className='btn-container'>
-                                            <a href={project.link1}>
+                                            <a href={project.link1} target='_blank' rel="noopener noreferrer">
                                                 <div className='web-btn'>Click to View</div>
                                             </a>
                                         </div>
@@ -78,7 +69,7 @@ class WebDevelopment extends Component {
                                         <div className='project-title'>{project.title2}</div>
                                         <div className='project-description'>{project.desc2}</div>
                                         <div className='btn-container'>
-                                            <a href={project.link2}>
+                                            <a href={project.link2} target='_blank' rel="noopener noreferrer">
                                                 <div className='web-btn'>Click to View</div>
                                             </a>
                                         </div>
