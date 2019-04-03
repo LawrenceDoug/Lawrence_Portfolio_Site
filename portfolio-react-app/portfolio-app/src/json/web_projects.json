@@ -1,6 +1,5 @@
 {
-    "web_work": [
-        {
+    "web_work": [{
             "id": 1,
             "img1": "https://images-na.ssl-images-amazon.com/images/I/91ZerzbqZ1L.jpg",
             "img1Name": "Image1",
@@ -11,7 +10,7 @@
             "img2Name": "Image2",
             "title2": "Title2",
             "desc2": "Section is where we are. Section is where we are. Section is where we are. Section is where we are. Section is where we are.",
-            "link2": "https://timedotcom.files.wordpress.com/2017/12/ryan-pfluger-best-portraits-2017-1512.jpg?quality=85" 
+            "link2": "https://timedotcom.files.wordpress.com/2017/12/ryan-pfluger-best-portraits-2017-1512.jpg?quality=85"
         },
         {
             "id": 2,
@@ -24,7 +23,7 @@
             "img2Name": "Image2",
             "title2": "Title2",
             "desc2": "Section is where we are. Section is where we are. Section is where we are. Section is where we are. Section is where we are.",
-            "link2": "https://timedotcom.files.wordpress.com/2017/12/ryan-pfluger-best-portraits-2017-1512.jpg?quality=85" 
+            "link2": "https://timedotcom.files.wordpress.com/2017/12/ryan-pfluger-best-portraits-2017-1512.jpg?quality=85"
         }
     ]
 }

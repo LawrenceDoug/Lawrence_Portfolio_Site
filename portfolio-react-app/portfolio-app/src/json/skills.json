@@ -1,100 +1,99 @@
 {
-   "skills": [
-      {
-         "id": 0,
-         "type": "core",
-         "title": "HTML",
-         "link": "https://www.w3schools.com/html/"
-      },
-      {
-         "id": 1,
-         "type": "core",
-         "title": "CSS",
-         "link": "https://www.w3schools.com/css/"
-      },
-      {
-         "id": 2,
-         "type": "core",
-         "title": "Javascript",
-         "link": "https://www.javascript.com/"
-      },
-      {
-         "id": 3,
-         "type": "core",
-         "title": "ReactJS",
-         "link": "https://reactjs.org/"
-      },
-      {
-         "id": 4,
-         "type": "core",
-         "title": "ReduxJS",
-         "link": "https://redux.js.org/"
-      },
-      {
-         "id": 5,
-         "type": "core",
-         "title": "Node.js",
-         "link": "https://nodejs.org/en/"
-      },
-      {
-         "id": 6,
-         "type": "core",
-         "title": "ExpressJS",
-         "link": "https://expressjs.com/"
-      },
-      {
-         "id": 7,
-         "type": "core",
-         "title": "MongoDB",
-         "link": "https://www.mongodb.com/"
-      },
-      {
-         "id": 21,
-         "type": "soft",
-         "title": "AngularJS",
-         "link": "https://angularjs.org/"
-      },
-      {
-         "id": 22,
-         "type": "soft",
-         "title": "Android App Dev",
-         "link": "https://developer.android.com/studio/?gclid=CjwKCAiAnsnjBRB6EiwATkM1XrHWH-1D7vFEaa795vd6gTT2j6udhoa2walEMsrnSUXys-HcwkC3ahoCrasQAvD_BwE"
-      },
-      {
-         "id": 23,
-         "type": "soft",
-         "title": "Python",
-         "link": "https://www.python.org/"
-      },
-      {
-         "id": 24,
-         "type": "soft",
-         "title": "Ruby",
-         "link": "https://www.ruby-lang.org/en/"
-      },
-      {
-         "id": 25,
-         "type": "soft",
-         "title": "Microsoft SQL Server",
-         "link": ""
-      },
-      {
-         "id": 26,
-         "type": "soft",
-         "title": "C#",
-         "link": ""
-      },
-      {
-         "id": 27,
-         "type": "soft",
-         "title": "WPF",
-         "link": ""
-      },
-      {
-         "id": 28,
-         "type": "soft",
-         "title": "ASP.net MVC 5",
-         "link": ""
-      }
-   ]
+    "skills": [{
+            "id": 0,
+            "type": "core",
+            "title": "HTML",
+            "link": "https://www.w3schools.com/html/"
+        },
+        {
+            "id": 1,
+            "type": "core",
+            "title": "CSS",
+            "link": "https://www.w3schools.com/css/"
+        },
+        {
+            "id": 2,
+            "type": "core",
+            "title": "Javascript",
+            "link": "https://www.javascript.com/"
+        },
+        {
+            "id": 3,
+            "type": "core",
+            "title": "ReactJS",
+            "link": "https://reactjs.org/"
+        },
+        {
+            "id": 4,
+            "type": "core",
+            "title": "ReduxJS",
+            "link": "https://redux.js.org/"
+        },
+        {
+            "id": 5,
+            "type": "core",
+            "title": "Node.js",
+            "link": "https://nodejs.org/en/"
+        },
+        {
+            "id": 6,
+            "type": "core",
+            "title": "ExpressJS",
+            "link": "https://expressjs.com/"
+        },
+        {
+            "id": 7,
+            "type": "core",
+            "title": "MongoDB",
+            "link": "https://www.mongodb.com/"
+        },
+        {
+            "id": 21,
+            "type": "soft",
+            "title": "AngularJS",
+            "link": "https://angularjs.org/"
+        },
+        {
+            "id": 22,
+            "type": "soft",
+            "title": "Android App Dev",
+            "link": "https://developer.android.com/studio/?gclid=CjwKCAiAnsnjBRB6EiwATkM1XrHWH-1D7vFEaa795vd6gTT2j6udhoa2walEMsrnSUXys-HcwkC3ahoCrasQAvD_BwE"
+        },
+        {
+            "id": 23,
+            "type": "soft",
+            "title": "Python",
+            "link": "https://www.python.org/"
+        },
+        {
+            "id": 24,
+            "type": "soft",
+            "title": "Ruby",
+            "link": "https://www.ruby-lang.org/en/"
+        },
+        {
+            "id": 25,
+            "type": "soft",
+            "title": "Microsoft SQL Server",
+            "link": "https://www.microsoft.com/en-us/sql-server/default.aspx"
+        },
+        {
+            "id": 26,
+            "type": "soft",
+            "title": "C#",
+            "link": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+        },
+        {
+            "id": 27,
+            "type": "soft",
+            "title": "WPF",
+            "link": "https://docs.microsoft.com/en-us/dotnet/framework/wpf/"
+        },
+        {
+            "id": 28,
+            "type": "soft",
+            "title": "ASP.net MVC 5",
+            "link": "https://dotnet.microsoft.com/apps/aspnet/mvc"
+        }
+    ]
 }

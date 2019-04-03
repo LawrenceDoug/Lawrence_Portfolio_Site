@@ -9,7 +9,7 @@ const myExperiences = experiences.experiences;
 const skills = require('../../json/skills');
 const mySkills = skills.skills;
 
-class About extends Component {    
+class About extends Component {
     render() {
         return (
             <div className='about-container'>
@@ -17,14 +17,10 @@ class About extends Component {
                     <img className='personal-pic' src='../assets/images/personal/Lawrence.jpg' alt="It's me!" />
                     <div className='personal-info'>
                         <div className='name'>Lawrence Douglas</div>
-                        <div className='titles'>Web Dev | Graphic Design | UI/UX</div>
+                        <div className='titles'>Web Dev | Graphic Design | UIUX</div>
                     </div>
                     <div className='description'>
-                        I am an aspiring web developer with an interest in UIUX work, but I'm open to working on front-end and back-end web development.
-
-                        Developed various skills in HTML / CSS / JavaScript, non-relational solutions such as MongoDB, and relational solutions such as Microsoft SQL Server.
-
-                        Very familiar with the MERN (MongoDB, Express, ReactJS, Node.js) stack. Worked with this project structure whilst working on my capstone project for Neumont College of Computer Science. The project was dubbed Game Speak and it is a live video chatting site that allows for online multiplayer gaming and video chatting simultaneously.
+                        Web developer with an overarching interest in UIUX work, but very keen on the arts of full stack web development. My skills range from HTML / CSS / JavaScript to non-relational storage solutions such as MongoDB and relational solutions such as Microsoft SQL Server. My preferred project structure usually consists of the MERN stack which would be MongoDB, Express, ReactJS, and Node.js.
                     </div>
                 </div>
                 <div className='extra-info-container'>
@@ -35,7 +31,7 @@ class About extends Component {
                                 mySkills.map((skill) => {
                                     if (skill.type === 'core') {
                                         return (
-                                            <a key={skill.id} className='skill-link' href={skill.link} alt={skill.title} target='_blank' rel='noopener noreferrer'>
+                                            <a key={skill.id} className='skill-link hvr-grow' href={skill.link} alt={skill.title} target='_blank' rel='noopener noreferrer'>
                                                 <div className='skill-padding'>
                                                     <div className='skill'>
                                                         {skill.title}
@@ -57,7 +53,7 @@ class About extends Component {
                                 mySkills.map((skill) => {
                                     if (skill.type === 'soft') {
                                         return (
-                                            <a key={skill.id} className='skill-link' href={skill.link} alt={skill.title} target='_blank' rel='noopener noreferrer'>
+                                            <a key={skill.id} className='skill-link hvr-grow' href={skill.link} alt={skill.title} target='_blank' rel='noopener noreferrer'>
                                                 <div className='skill-padding'>
                                                     <div className='skill'>
                                                         {skill.title}

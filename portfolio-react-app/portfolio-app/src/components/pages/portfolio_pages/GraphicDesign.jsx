@@ -9,19 +9,35 @@ const myWork = work.gd_work;
 
 // Graphic Design item variables
 var id;
+var slides = document.getElementsByClassName('g-modal-content');
+var i;
 
 // Slideshow
 var slideIndex = 1;
+var slide;
 
 const showSlides = (n) => {
-    var i;
-    var slides = document.getElementsByClassName('g-modal-content');
+    console.log('N: ' + n);
+    console.log('Length: ' + slides.length);
+    console.log('Slide Index: ' + slideIndex)
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';
     }
+    slideProject(slideIndex - 1);
     slides[slideIndex - 1].style.display = 'flex';
+}
+
+const slideProject = (n) => {
+    var content = document.getElementsByClassName('g-modal-middle');
+    if (slide === true) {
+        content[n].style.animation = 'moveImageRight';
+        content[n].style.animationDuration = '1s';
+    } else if (slide === false) {
+        content[n].style.animation = 'moveImageLeft';
+        content[n].style.animationDuration = '1s';
+    }
 }
 
 class GraphicDesign extends Component {
@@ -33,30 +49,42 @@ class GraphicDesign extends Component {
         }
     }
 
-    squareClicked(e) {
+    imageClicked(e) {
+        slide = '';
         this.setState({ modal: true });
         id = e.target.parentElement.children.item(1).children.item(0).textContent;
 
         showSlides(slideIndex = id);
+        var modal = document.getElementById('myModal').style;
+        modal.animation = 'openImage';
+        modal.animationDuration = '1s';
+
         document.body.style.overflow = 'hidden';
-        console.log(slideIndex);
     }
 
     closeModal() {
-        this.setState({ modal: false });
+        var modal = document.getElementById('myModal').style;
+        modal.animation = 'closeImage';
+        modal.animationDuration = '1s';
+        var grid = document.getElementById('img-grid').style;
+        grid.pointerEvents = 'none';
+        setTimeout(() => {
+            this.setState({ modal: false });
+            grid.pointerEvents = 'auto';
+        }, 1000)
         document.body.style.overflow = 'auto';
     }
 
     plusSlides() {
+        slide = true;
         console.log(slideIndex);
-        showSlides(slideIndex += 1);
+        showSlides(slideIndex+=1);
         console.log(slideIndex);
     }
 
     minusSlides() {
-        console.log(slideIndex);
+        slide = false;
         showSlides(slideIndex -= 1);
-        console.log(slideIndex);
     }
 
     componentDidMount() {
@@ -66,13 +94,12 @@ class GraphicDesign extends Component {
             return myProjects;
         })
         this.setState({ projects: myProjects });
-        // document.body.style.overflow = 'auto';
     }
 
     render() {
         return (
             <div className='graphic-design-container'>
-                <div className='img-grid'>
+                <div id='img-grid' className='img-grid'>
                     {
                         myWork.map((project) => {
                             return (
@@ -82,7 +109,7 @@ class GraphicDesign extends Component {
                                         <span style={{ display: 'none' }}>
                                             <p>{project.id}</p>
                                         </span>
-                                        <span onClick={(e) => this.squareClicked(e)} className='gd-item-inner' style={{ backgroundColor: project.color }}>
+                                        <span onClick={(e) => this.imageClicked(e)} className='gd-item-inner' style={{ backgroundColor: project.color }}>
                                             <img style={{ display: 'none' }} alt={''} src={project.img} />
                                             <span className='gd-item-info'>
                                                 <p style={{ display: 'none' }}>{project.id}</p>
@@ -107,7 +134,9 @@ class GraphicDesign extends Component {
                                 <div key={project.id} className='g-modal-content' style={{ backgroundColor: project.color }}>
                                     <div className='g-modal-top'>
                                         <div className='modalFlex-1'>
-                                            <div className="gd-modal-moreInfo"><FontAwesomeIcon icon={faInfoCircle} /></div>
+                                            <div className="gd-modal-moreInfo"><FontAwesomeIcon icon={faInfoCircle} />
+                                                <span className='gd-tooltip-right'>In development</span>
+                                            </div>
                                         </div>
                                         <div className='modalFlex-2'>
                                             <div onClick={this.closeModal.bind(this)} className="gd-modal-close">&times;</div>

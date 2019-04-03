@@ -10,18 +10,21 @@ class Work extends Component {
             portfolioSection: 1
         }
     }
+
     onWebClick() {
         this.setState({ portfolioSection: 1 });
         document.getElementById('web-link').classList.add('portfolio-active');
         document.getElementById('graphic-link').classList.remove('portfolio-active');
         document.getElementById('photo-link').classList.remove('portfolio-active');
     }
+
     onGraphicClick() {
         this.setState({ portfolioSection: 2 });
         document.getElementById('web-link').classList.remove('portfolio-active');
         document.getElementById('graphic-link').classList.add('portfolio-active');
         document.getElementById('photo-link').classList.remove('portfolio-active');
     }
+
     onPhotoClick() {
         this.setState({ portfolioSection: 3 });
         document.getElementById('web-link').classList.remove('portfolio-active');
@@ -35,12 +38,13 @@ class Work extends Component {
 
     render() {
         var content;
-        if(this.state.portfolioSection === 1) {
-            content = <WebDevelopment/>
+        if (this.state.portfolioSection === 1) {
+            content = <WebDevelopment />
         }
         if (this.state.portfolioSection === 2) {
             content = <GraphicDesign />
         }
+        
         return (
             <div className='portfolio-container'>
                 <div className='portfolio-links'>

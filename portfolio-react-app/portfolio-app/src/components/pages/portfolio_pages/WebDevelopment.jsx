@@ -19,20 +19,18 @@ const showSlides = (n) => {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';
     }
+    slides[slideIndex - 1].style.animation = 'carousel';
+    slides[slideIndex - 1].style.animationDuration = '1s';
     slides[slideIndex - 1].style.display = 'flex';
 }
 
 class WebDevelopment extends Component {
     plusSlides() {
-        console.log(slideIndex);
         showSlides(slideIndex += 1);
-        console.log(slideIndex);
     }
 
     minusSlides() {
-        console.log(slideIndex);
         showSlides(slideIndex -= 1);
-        console.log(slideIndex);
     }
 
     componentDidMount() {

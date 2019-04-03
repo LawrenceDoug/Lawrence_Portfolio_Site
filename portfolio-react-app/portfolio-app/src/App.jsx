@@ -10,7 +10,7 @@ import { withRouter } from 'react-router';
 import './App.css';
 import './index.css';
 
-//Pages
+// Components
 import Navigation from './components/common/Navigation';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
@@ -18,14 +18,14 @@ import Work from './components/pages/Work';
 
 class App extends Component {
   backToTop() {
-    window.scrollTo = 0;
-    console.log(window.screenTop)
+    var element = document.getElementById('body');
+    element.scrollTop = 0;
   }
   render() {
     return (
       <div id='body' className='body'>
-        <span className='back-to-top-btn' onClick={this.backToTop}>^</span>
         <Navigation className='navigation' />
+        {/* <span className='back-to-top-btn' onClick={this.backToTop}></span> */}
         <div className='main-container'>
           <Switch>
             <Route path="/" component={Home} exact />
