@@ -1,16 +1,16 @@
 {
     "web_work": [{
             "id": 1,
-            "img1": "https://images-na.ssl-images-amazon.com/images/I/91ZerzbqZ1L.jpg",
-            "img1Name": "Image1",
-            "title1": "Title1",
-            "desc1": "Section is where we are. Section is where we are. Section is where we are. Section is where we are. Section is where we are.",
-            "link1": "https://images-na.ssl-images-amazon.com/images/I/91ZerzbqZ1L.jpg",
+            "img1": "../assets/images/webproj/flipbookapp.png",
+            "img1Name": "Flipbook",
+            "title1": "How To Believe In Yourself",
+            "desc1": "A very basic online flipbook Angular application that gives a step by step guide on how to believe in yourself. It served the purpose of teaching the concepts of routing  and components in angular.",
+            "link1": "https://tinyurl.com/howtobelieveinyourself",
             "img2": "https://timedotcom.files.wordpress.com/2017/12/ryan-pfluger-best-portraits-2017-1512.jpg?quality=85",
             "img2Name": "Image2",
             "title2": "Title2",
             "desc2": "Section is where we are. Section is where we are. Section is where we are. Section is where we are. Section is where we are.",
-            "link2": "https://timedotcom.files.wordpress.com/2017/12/ryan-pfluger-best-portraits-2017-1512.jpg?quality=85"
+            "link2": ""
         },
         {
             "id": 2,
