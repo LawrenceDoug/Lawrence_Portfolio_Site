@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+// CUSTOM SCROLL BAR
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: $primary-color;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: $tertiary-color;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: $secondary-color;
+}
+
+// Custom element selection
+*::selection {
+    color: $portfolio-white;
+}

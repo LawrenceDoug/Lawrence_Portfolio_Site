@@ -1,0 +1,482 @@
+// NAVBAR
+.nav {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: 0;
+    padding: 1rem;
+    background-color: transparent;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: initial;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.logo {
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 5px;
+    color: $portfolio-black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.logo:hover {
+    color: $portfolio-black;
+}
+
+.logo:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.logo::before {
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $portfolio-black;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: $portfolio-black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.nav-link:hover {
+    color: $portfolio-black;
+}
+
+.nav-link:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.nav-link::before {
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $portfolio-black;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.active {
+    color: $icon-color;
+    padding-bottom: 5px;
+    border-bottom: 2px solid currentColor
+}
+
+.back-to-top-btn {
+    z-index: 50;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 10%;
+    border-radius: 40px;
+    text-align: center;
+    color: $portfolio-white;
+    background-color: $icon-color;
+    &::before {
+        content: 'Click to go up';
+    }
+    &:hover {
+        cursor: pointer;
+        color: $portfolio-white;
+        background-color: $secondary-color;
+        font-weight: lighter;
+    }
+    &:hover::before {
+        content: 'Head up there';
+        transition: all .1s ease;
+    }
+}
+
+.nav-contact {
+    display: flex;
+    flex-direction: initial;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.contact {
+    cursor: pointer;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: $portfolio-black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.contact:hover {
+    color: $portfolio-black;
+}
+
+.contact:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.contact::before {
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $portfolio-black;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+//______________________________________________________________
+// MODAL
+.modal {
+    z-index: 10;
+    /* Sit on top */
+    position: fixed;
+    /* Stay in place */
+    overflow-y: auto;
+    /* Enable scroll if needed */
+    overflow-x: hidden;
+    width: 90vw;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    top: 0;
+    left: 0;
+    background-color: $portfolio-white;
+    box-shadow: 5px 0px 20px $secondary-color;
+    animation-name: animatetop;
+    animation-duration: 1s;
+}
+
+.modal-content {
+    margin: auto;
+    padding: 25px;
+    color: $portfolio-black;
+    background-color: $portfolio-white;
+}
+
+.modal-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 65px;
+}
+
+.modal-row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.close {
+    z-index: 100;
+    color: $secondary-color;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: $icon-color;
+    text-decoration: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 5px;
+}
+
+.flex-row-column {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 5px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 5px;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 40px;
+}
+
+.label-padding {
+    padding-bottom: 5px;
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.nameBox {
+    display: flex;
+    flex: 1;
+    height: 6vh;
+    padding-left: 1rem;
+    color: $icon-color;
+    font-size: 1rem;
+    border: 3px solid $portfolio-gray;
+}
+
+.nameBox:focus {
+    border: 2px solid $icon-color;
+}
+
+.longBox {
+    display: flex;
+    flex: 1;
+    color: $icon-color;
+    height: 6vh;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border: 3px solid $portfolio-gray;
+}
+
+.longBox:focus {
+    border: 3px solid $icon-color;
+}
+
+.bigBox {
+    display: flex;
+    flex: 1;
+    color: $icon-color;
+    height: 20vh;
+    padding: 5px;
+    font-size: 1.2rem;
+    border: 3px solid $portfolio-gray;
+}
+
+.bigBox:focus {
+    border: 2px solid $icon-color;
+}
+
+.send-btn {
+    width: 100%;
+    height: 9vh;
+    padding: 10x;
+    color: #000;
+    background-color: $portfolio-white;
+    font-size: 1rem;
+    text-align: center;
+    border: 3px solid $portfolio-gray;
+    transition: all 0.8s;
+}
+
+.send-btn:hover {
+    cursor: pointer;
+    color: $secondary-color;
+    background-color: $icon-color;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    padding: 5px;
+    text-align: center;
+}
+
+.social {
+    padding-bottom: 5px;
+    font-family: $social-font;
+    font-size: 20px;
+
+    &::before {
+        content: 'Social Profiles';
+    }
+    &:hover {
+        cursor: pointer;
+        font-weight: lighter;
+    }
+    &:hover::before {
+        content: 'Go on. Check em all out!';
+        animation-name: 'flowRight';
+        animation-duration: 1s;
+        transition: all .1s ease;
+    }
+}
+
+.icon {
+    position: relative;
+    padding: 5px;
+    color: $secondary-color;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.icon:hover {
+    color: $icon-color;
+}
+
+.icon:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.icon::before {
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $icon-color;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+// LOCATION MODAL
+.location-section-1 {
+    box-shadow: inset 0px 0px 10px $portfolio-black;
+    background-color: $primary-color;
+}
+
+.location-section-pic {
+    margin: auto auto;
+    text-align: center;
+}
+
+.personal-pic-container {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.personal-pic-2 {
+    width: 85%;
+    height: 85%;
+    border-radius: 200px;
+    object-fit: cover;
+    transform: rotate(90deg);
+}
+
+// GOOGLE EMBEDED MAP
+.mapouter {
+    position: relative;
+    margin-top: 65px;
+    width: 1000px;
+    height: 800px;
+    text-align: right;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 1000px;
+    height: 800px;
+}
+
+//______________________________________________________________
+@media only screen and (max-width: 1000px) {
+    .nav {
+        position: relative;
+        flex-direction: column;
+        background-color: $primary-color;
+    }
+    .nav-logo {
+        padding: 1rem;
+        justify-content: center;
+    }
+    .nav-links {
+        padding: 1rem;
+        justify-content: center;
+    }
+    .nav-contact {
+        padding: 1rem;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .modal-row {
+        flex-direction: column;
+    }
+    .modal-column {
+        margin-top: 10px;
+    }
+    .flex-row-column {
+        flex-direction: column;
+    }
+    .names {
+        flex-direction: column;
+    }
+    .personal-pic-2 {
+        display: none;
+    }
+    .mapouter {
+        width: 300px;
+        height: 300px;
+    }
+    .gmap_canvas {
+        width: 300px;
+        height: 300px;
+    }
+}
