@@ -70,8 +70,8 @@ class Navigation extends Component {
 
     handleLocationModal() {
         this.setState({ locationModal: true });
-        var contact = document.getElementById('contact');
-        contact.style.pointerEvents = 'none';
+        // var contact = document.getElementById('contact');
+        // contact.style.pointerEvents = 'none';
         var location = document.getElementById('location');
         location.style.color = '#8884FF';
         location.style.paddingBottom = '5px';
@@ -97,8 +97,8 @@ class Navigation extends Component {
             location.style.color = '';
             location.style.paddingBottom = '';
             location.style.borderBottom = '';
-            var contact = document.getElementById('contact');
-            contact.style.pointerEvents = 'auto';
+            // var contact = document.getElementById('contact');
+            // contact.style.pointerEvents = 'auto';
         }, 1000)
     }
 
@@ -114,13 +114,13 @@ class Navigation extends Component {
                     <NavLink to={Resume} className='logo' target='_blank'>LAWRENCE DOUGLAS</NavLink>
                 </div>
                 <div className='nav-links'>
-                    <NavLink to='/' className='nav-link' exact={true}>Intro</NavLink>
+                    <NavLink to='/' className='nav-link' exact={true}>Home</NavLink>
                     <NavLink to='/about' className='nav-link'>About</NavLink>
                     <NavLink to='/work' className='nav-link'>Work</NavLink>
                     <NavLink to={Resume} className='nav-link' target='_blank'>Resume</NavLink>
                 </div>
                 <div className='nav-contact'>
-                    <div onClick={this.handleContactModal.bind(this)} id='contact' className='contact'>Contact</div>
+                    {/* <div onClick={this.handleContactModal.bind(this)} id='contact' className='contact'>Contact</div> */}
                     <div onClick={this.handleLocationModal.bind(this)} id='location' className='contact'>Location</div>
                 </div>
 
@@ -129,7 +129,7 @@ class Navigation extends Component {
                         'block' : 'none'
                 }}>
                     <div className='modal-content'>
-                        <div onClick={this.closeContactModal.bind(this)} className='close'>&times;</div>
+                        {/* <div onClick={this.closeContactModal.bind(this)} className='close'>&times;</div> */}
                         <form onSubmit={this.sendEmail} className='email-form'>
                             <div className='names'>
                                 <div className='flex-column'>
@@ -232,6 +232,20 @@ class Navigation extends Component {
                                     <p className='bold-text font-size-25'>Email:</p>
                                     <p className=''><strong>Professional Business:</strong> lawrence.cwd@gmail.com</p>
                                     {/* <p className=''><strong>Personal Business:</strong> theorganizationsinquiries@gmail.com</p>                                     */}
+                                </div>
+                                <div className='location-section-2 padding-15 padding-top-30'>
+                                    <div className='social-container'>
+                                        <div className='social'></div>
+                                        <div>
+                                            <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/lawrencecwdouglas/'><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                                            <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/the_sol_designer/'><FontAwesomeIcon icon={faInstagram} /></a>
+                                            {/* <a className='icon' target='_blank' rel='noopener noreferrer' href='https://twitter.com/TheSolDesigner'><FontAwesomeIcon icon={faTwitter} /></a> */}
+                                            <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.youtube.com/channel/UCWMAk7fyBexv0Mm4gxOaRuw?view_as=subscriber'><FontAwesomeIcon icon={faYoutube} /></a>
+                                            <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.twitch.tv/tr_lonesol'><FontAwesomeIcon icon={faTwitch} /></a>
+                                            {/* <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/ShepherdSupreme/?ref=bookmarks'><FontAwesomeIcon icon={faFacebook} /></a> */}
+                                            {/* <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.pinterest.com/joxiousdesigns/'><FontAwesomeIcon icon={faPinterest} /></a> */}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

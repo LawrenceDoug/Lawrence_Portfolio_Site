@@ -2793,7 +2793,7 @@ a {
 }
 
 .modal {
-  z-index: 10;
+  z-index: 1000;
   /* Sit on top */
   position: fixed;
   /* Stay in place */
@@ -3022,11 +3022,10 @@ a {
 }
 
 .personal-pic-2 {
-  width: 85%;
-  height: 85%;
-  border-radius: 200px;
+  width: 300px;
+  height: 300px;
+  border-radius: 1000px;
   object-fit: cover;
-  transform: rotate(90deg);
 }
 
 .mapouter {
@@ -3136,7 +3135,6 @@ a {
 }
 
 .header-content {
-  z-index: 100;
   position: absolute;
   margin-top: -350px;
   width: 100%;

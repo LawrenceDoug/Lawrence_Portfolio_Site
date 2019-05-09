@@ -118,8 +118,8 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div id='top-graphic-design-projects-container'></div>
-        <div id='best-photographs-container'></div>
+        {/* <div id='top-graphic-design-projects-container'></div>
+        <div id='best-photographs-container'></div> */}
       </div>
     );
   }
