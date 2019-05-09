@@ -1,19 +1,19 @@
 {
     "gd_work": [{
             "id": 1,
-            "img": "https://media.comicbook.com/2018/12/kingdom-hearts-3-1149243.jpeg",
-            "imgName": "Sora",
-            "title": "Sora is Here",
-            "desc": "The boy with the key will save us all",
-            "color": "purple"
+            "img": "../assets/images/graphicdesign/pbs-logos.png",
+            "imgName": "PBS Logo's",
+            "title": "Custom Seafood Restaurant Logo",
+            "desc": "Made in class",
+            "color": "#E71D36"
         },
         {
             "id": 2,
-            "img": "https://media.comicbook.com/2018/12/kingdom-hearts-3-1149243.jpeg",
-            "imgName": "Sora",
-            "title": "Sora is Here",
-            "desc": "The boy with the key will save us all",
-            "color": "purple"
+            "img": "../assets/images/graphicdesign/spoof-bicycle.png",
+            "imgName": "Spoof Product",
+            "title": "Bicycle Playing Cards Spoof",
+            "desc": "Made in class",
+            "color": "#AD2831"
         },
         {
             "id": 3,
