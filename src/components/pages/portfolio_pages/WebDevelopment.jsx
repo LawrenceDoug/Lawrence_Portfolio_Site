@@ -60,6 +60,12 @@ class WebDevelopment extends Component {
                                             </a>
                                         </div>
                                     </div>
+                                    {
+                                        project.type1 === "wip" ?
+                                        <p>Work in progress</p>
+                                        :
+                                        <s></s>
+                                    }
                                 </div>
                                 <div className='project-container'>
                                     <img className='project-img' src={project.img2} alt={project.img2Name} />

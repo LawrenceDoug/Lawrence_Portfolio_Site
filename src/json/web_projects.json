@@ -1,16 +1,18 @@
 {
     "web_work": [{
             "id": 1,
-            "img1": "../assets/images/webproj/flipbookapp.png",
-            "img1Name": "Flipbook",
-            "title1": "How To Believe In Yourself",
-            "desc1": "A very basic online flipbook Angular application that gives a step by step guide on how to believe in yourself. It served the purpose of teaching the concepts of routing  and components in angular.",
-            "link1": "https://tinyurl.com/howtobelieveinyourself",
-            "img2": "https://timedotcom.files.wordpress.com/2017/12/ryan-pfluger-best-portraits-2017-1512.jpg?quality=85",
-            "img2Name": "Image2",
-            "title2": "Title2",
-            "desc2": "Section is where we are. Section is where we are. Section is where we are. Section is where we are. Section is where we are.",
-            "link2": ""
+            "img1": "../assets/images/webproj/Mic.svg",
+            "img1Name": "GameSpeak Logo",
+            "title1": "GameSpeak - Live Video Chatting",
+            "desc1": "GameSpeak is a live video chatting service that also allows users to play games with each other. This project utilizes the MERN Stack, Redux, Socket.io, Passport JS, and the WebRTC API. It is still a work in progress.",
+            "link1": "https://lit-oasis-10043.herokuapp.com/",
+            "type1": "wip",
+            "img2": "../assets/images/webproj/flipbookapp.svg",
+            "img2Name": "Flipbook",
+            "title2": "How To Believe In Yourself",
+            "desc2": "A very basic online flipbook Angular application that gives a step by step guide on how to believe in yourself. It served the purpose of teaching the basic concepts of routing and components.",
+            "link2": "https://howtobelieveinyourself.herokuapp.com",
+            "type2": "finished"
         },
         {
             "id": 2,
@@ -19,11 +21,13 @@
             "title1": "Title1",
             "desc1": "Section is where we are. Section is where we are. Section is where we are. Section is where we are. Section is where we are.",
             "link1": "https://images-na.ssl-images-amazon.com/images/I/91ZerzbqZ1L.jpg",
+            "type1": "not-started",
             "img2": "https://melmagazine.com/wp-content/uploads/2019/02/meme2.jpg",
             "img2Name": "Image2",
             "title2": "Title2",
             "desc2": "Section is where we are. Section is where we are. Section is where we are. Section is where we are. Section is where we are.",
-            "link2": "https://timedotcom.files.wordpress.com/2017/12/ryan-pfluger-best-portraits-2017-1512.jpg?quality=85"
+            "link2": "https://timedotcom.files.wordpress.com/2017/12/ryan-pfluger-best-portraits-2017-1512.jpg?quality=85",
+            "type2": "not-started"
         }
     ]
 }

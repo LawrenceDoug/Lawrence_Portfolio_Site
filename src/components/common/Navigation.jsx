@@ -121,7 +121,7 @@ class Navigation extends Component {
                 </div>
                 <div className='nav-contact'>
                     {/* <div onClick={this.handleContactModal.bind(this)} id='contact' className='contact'>Contact</div> */}
-                    <div onClick={this.handleLocationModal.bind(this)} id='location' className='contact'>Location</div>
+                    <div onClick={this.handleLocationModal.bind(this)} id='location' className='contact'>Contact</div>
                 </div>
 
                 <div id='contactModal' className='modal' style={{
