@@ -62,9 +62,11 @@ class WebDevelopment extends Component {
                                     </div>
                                     {
                                         project.type1 === "wip" ?
-                                        <p>Work in progress</p>
-                                        :
-                                        <s></s>
+                                            <div className='work-in-progress'>
+                                                WIP
+                                            </div>
+                                            :
+                                            <s></s>
                                     }
                                 </div>
                                 <div className='project-container'>
@@ -78,6 +80,14 @@ class WebDevelopment extends Component {
                                             </a>
                                         </div>
                                     </div>
+                                    {
+                                        project.type2 === "wip" ?
+                                            <div className='work-in-progress'>
+                                                WIP
+                                            </div>
+                                            :
+                                            <s></s>
+                                    }
                                 </div>
                             </div>
                         )

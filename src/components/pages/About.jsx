@@ -53,13 +53,13 @@ class About extends Component {
                                 mySkills.map((skill) => {
                                     if (skill.type === 'soft') {
                                         return (
-                                            <a key={skill.id} className='skill-link hvr-grow' href={skill.link} alt={skill.title} target='_blank' rel='noopener noreferrer'>
+                                            <div key={skill.id} className='hvr-grow' alt={skill.title}>
                                                 <div className='skill-padding'>
                                                     <div className='skill'>
                                                         {skill.title}
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </div>
                                         )
                                     } else {
                                         return (

@@ -74,6 +74,19 @@
     color: $portfolio-black;
 }
 
+.work-in-progress {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    color: #fff;
+    background-color: $tertiary-color;
+    font-family: $primary-font;
+    font-size: 22px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 1000px;
+}
+
 @media only screen and (max-width: 600px) {
     .project-container {
         display: flex;

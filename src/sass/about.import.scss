@@ -112,7 +112,6 @@
 }
 
 .skill:hover {
-    cursor: pointer;
     color: $primary-color;
     background-color: $secondary-color;
 }
@@ -120,6 +119,9 @@
 .skill-link {
     color: $portfolio-black;
     text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .experience-container {

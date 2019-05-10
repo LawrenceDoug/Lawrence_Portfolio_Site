@@ -94,6 +94,36 @@
             "type": "core",
             "title": "ASP.net MVC 5",
             "link": "https://dotnet.microsoft.com/apps/aspnet/mvc"
+        },
+        {
+            "id": 51,
+            "type": "soft",
+            "title": "Leadership"
+        },
+        {
+            "id": 53,
+            "type": "soft",
+            "title": "Team Collaboration"
+        },
+        {
+            "id": 54,
+            "type": "soft",
+            "title": "Time Management"
+        },
+        {
+            "id": 55,
+            "type": "soft",
+            "title": "Project Management"
+        },
+        {
+            "id": 56,
+            "type": "soft",
+            "title": "Interpersonal Skills"
+        },
+        {
+            "id": 57,
+            "type": "soft",
+            "title": "Professional Communication"
         }
     ]
 }

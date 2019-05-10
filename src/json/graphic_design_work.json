@@ -2,9 +2,9 @@
     "gd_work": [{
             "id": 1,
             "img": "../assets/images/graphicdesign/pbs-logos.png",
-            "imgName": "PBS Logo's",
+            "imgName": "PBS Logos",
             "title": "Custom Seafood Restaurant Logo",
-            "desc": "Made in class",
+            "desc": "A custom set of logos for an imaginary seafood company called Privateer Bay Seafood. [Class project]",
             "color": "#E71D36"
         },
         {
@@ -12,7 +12,7 @@
             "img": "../assets/images/graphicdesign/spoof-bicycle.png",
             "imgName": "Spoof Product",
             "title": "Bicycle Playing Cards Spoof",
-            "desc": "Made in class",
+            "desc": "I introduce you to Tricycle, a card game of wits and unyielding disappiontment. Play at your own risk. [Class Project]",
             "color": "#AD2831"
         },
         {

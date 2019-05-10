@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import Resume from '../../documents/Resume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedinIn, faTwitch, faYoutube, faTwitter, faPinterest, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedinIn, faYoutube,  } from '@fortawesome/free-brands-svg-icons';
 
 
 class Navigation extends Component {
@@ -186,10 +186,10 @@ class Navigation extends Component {
                                         <div className='social'></div>
                                         <div>
                                             <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/lawrencecwdouglas/'><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                                            <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/the_sol_designer/'><FontAwesomeIcon icon={faInstagram} /></a>
+                                            <a className='icon' target='_blank' rel='noopener noreferrer' href='https://github.com/LawrenceDoug?tab=repositories'><FontAwesomeIcon icon={faGithub} /></a>
                                             {/* <a className='icon' target='_blank' rel='noopener noreferrer' href='https://twitter.com/TheSolDesigner'><FontAwesomeIcon icon={faTwitter} /></a> */}
                                             <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.youtube.com/channel/UCWMAk7fyBexv0Mm4gxOaRuw?view_as=subscriber'><FontAwesomeIcon icon={faYoutube} /></a>
-                                            <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.twitch.tv/tr_lonesol'><FontAwesomeIcon icon={faTwitch} /></a>
+                                            {/* <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.twitch.tv/tr_lonesol'><FontAwesomeIcon icon={faTwitch} /></a> */}
                                             {/* <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/ShepherdSupreme/?ref=bookmarks'><FontAwesomeIcon icon={faFacebook} /></a> */}
                                             {/* <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.pinterest.com/joxiousdesigns/'><FontAwesomeIcon icon={faPinterest} /></a> */}
                                         </div>
@@ -238,10 +238,11 @@ class Navigation extends Component {
                                         <div className='social'></div>
                                         <div>
                                             <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/lawrencecwdouglas/'><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                                            <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/the_sol_designer/'><FontAwesomeIcon icon={faInstagram} /></a>
+                                            <a className='icon' target='_blank' rel='noopener noreferrer' href='https://github.com/LawrenceDoug?tab=repositories'><FontAwesomeIcon icon={faGithub}/></a>
+                                            {/* <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/the_sol_designer/'><FontAwesomeIcon icon={faInstagram} /></a> */}
                                             {/* <a className='icon' target='_blank' rel='noopener noreferrer' href='https://twitter.com/TheSolDesigner'><FontAwesomeIcon icon={faTwitter} /></a> */}
                                             <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.youtube.com/channel/UCWMAk7fyBexv0Mm4gxOaRuw?view_as=subscriber'><FontAwesomeIcon icon={faYoutube} /></a>
-                                            <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.twitch.tv/tr_lonesol'><FontAwesomeIcon icon={faTwitch} /></a>
+                                            {/* <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.twitch.tv/tr_lonesol'><FontAwesomeIcon icon={faTwitch} /></a> */}
                                             {/* <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/ShepherdSupreme/?ref=bookmarks'><FontAwesomeIcon icon={faFacebook} /></a> */}
                                             {/* <a className='icon' target='_blank' rel='noopener noreferrer' href='https://www.pinterest.com/joxiousdesigns/'><FontAwesomeIcon icon={faPinterest} /></a> */}
                                         </div>
