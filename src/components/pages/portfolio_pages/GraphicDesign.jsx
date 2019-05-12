@@ -78,7 +78,7 @@ class GraphicDesign extends Component {
     plusSlides() {
         slide = true;
         console.log(slideIndex);
-        showSlides(slideIndex+=1);
+        showSlides(slideIndex += 1);
         console.log(slideIndex);
     }
 
@@ -144,7 +144,9 @@ class GraphicDesign extends Component {
                                     </div>
                                     <div className='g-modal-middle'>
                                         <p style={{ display: 'none' }}>{project.id}</p>
-                                        <img className='expanded-gd-img' alt={project.imgName} src={project.img} width='50%' />
+                                        <a href={project.link} target='_blank' rel='noopener noreferrer'>
+                                            <img className='expanded-gd-img' alt={project.imgName} src={project.img} width='50%' />
+                                        </a>
                                         <div className='gd-modal-project-info'>
                                             <div className='gd-modal-info-title'>{project.title}</div>
                                             <div className='gd-modal-info-desc'>{project.desc}</div>

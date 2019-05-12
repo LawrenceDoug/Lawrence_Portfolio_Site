@@ -61,12 +61,18 @@
     justify-content: center;
     margin: auto;
     padding: 1rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
     width: 75%;
     color: $portfolio-black;
     font-size: 1.3rem;
-    text-indent: 50px;
+    // text-indent: 50px;
     text-align: left;
+}
+
+.about-desc-title {
+    text-align: left;
+    font-weight: bolder;
 }
 
 .extra-info-container {
@@ -130,6 +136,12 @@
     flex: 8;
 }
 
+.experiences {
+    display: flex;
+    flex-direction: column;
+    flex: 8;
+}
+
 .experience1 {
     padding-bottom: 15px;
     background-color: $tertiary-color;
@@ -170,6 +182,7 @@
     padding-right: 5px;
     padding-bottom: 15px;
     width: 95%;
+    font-family: $primary-font;
     font-size: 1.2rem;
 }
 

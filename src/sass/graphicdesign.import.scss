@@ -184,7 +184,7 @@
     justify-content: center;
     object-fit: cover;
     margin: auto auto;
-    height: 85%;
+    height: 100%;
     border: 10px solid $portfolio-white;
 }
 
@@ -203,6 +203,20 @@
 
 .gd-modal-info-desc {
     font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .expanded-gd-img {
+        display: flex;
+        flex-direction: initial;
+        flex: 6;
+        justify-content: center;
+        object-fit: cover;
+        margin: auto auto;
+        width: 100vw;
+        height: 100%;
+        border: 10px solid $portfolio-white;
+    }
 }
 
 @media only screen and (max-width: 1000px) {

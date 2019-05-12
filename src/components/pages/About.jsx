@@ -17,10 +17,27 @@ class About extends Component {
                     <img className='personal-pic' src='../assets/images/personal/Lawrence.jpg' alt="It's me!" />
                     <div className='personal-info'>
                         <div className='name'>Lawrence Douglas</div>
-                        <div className='titles'>Web Dev | Graphic Design | UIUX</div>
+                        <div className='titles'>Full Stack Web Dev | Graphic Design | UIUX</div>
                     </div>
                     <div className='description'>
-                        Web developer with an overarching interest in UIUX work, but very keen on the arts of full stack web development. My skills range from HTML / CSS / JavaScript to non-relational storage solutions such as MongoDB and relational solutions such as Microsoft SQL Server. My preferred project structure usually consists of the MERN stack which would be MongoDB, Express, ReactJS, and Node.js.
+                        <p className='about-desc-title'>F O U N D A T I O N</p>
+                        <br />
+                        <div>
+                            I'm a very hard worker indeed as my motivations stem from the support I can provide for my friends and family if I succeed. I am one with many goals and aspirations, in which case, they're here to drive my ambitions. To accomplish anything, I need to take initiative and actually do it first. "They always say time changes things, but you actually have to change them yourself" ~ Andy Warhol.
+                            <br />
+                            <br />
+                            I'm constantly looking for new ways to improve upon myself, and the only way to do that is through learning. That is why I live by the phrase "Learning is Life".
+                        </div>
+                        <br />
+                        <p className='about-desc-title'>P R O J E C T S</p>
+                        <br />
+                        <div>
+                            I've worked on various projects that include the technologies listed below. These projects range from basic small scale computer applications to large scale full-stack web applications
+                            <br />
+                            <br />
+                            <i>Technologies Used: </i>
+                            HTML5 | CSS3 | JavaScript ES6 | UI/UX | Git | React.js | Redux | Angular | Express.js | Node.js | MongoDB | Adobe CC | Microsoft Office | Git | SASS | NPM | Microsoft SQL Server | Agile Project Development | Scrum | Python | Ruby | Pug | C# | Android Studio | Visual Studio (Code) | Java | Eclipse | ASP.NET MVC | Cross Browser Development
+                        </div>
                     </div>
                 </div>
                 <div className='extra-info-container'>
@@ -71,23 +88,50 @@ class About extends Component {
                         </div>
                     </div>
                     <div className='experience-container'>
-                        <div className='experience-main-title'>EXPERIENCE</div>
-                        {
-                            myExperiences.map((experience) => {
-                                return (
-                                    <div key={experience.id} className={
-                                        experience.id % 2 === 0 ?
-                                            'experience2' : 'experience1'
-                                    }>
-                                        <div className='experience-title'>{experience.title}</div>
-                                        <div className='experience-location'>{experience.location}</div>
-                                        <div className='experience-time'>{experience.time}</div>
-                                        <br />
-                                        <div className='experience-description'>{experience.description}</div>
-                                    </div>
-                                )
-                            })
-                        }
+                        <div className='experiences'>
+                            <div className='experience-main-title'>EXPERIENCE</div>
+                            {
+                                myExperiences.map((experience) => {
+                                    if (experience.type === 'experience') {
+                                        return (
+                                            <div key={experience.id} className={
+                                                experience.id % 2 === 0 ?
+                                                    'experience2' : 'experience1'
+                                            }>
+                                                <div className='experience-title'>{experience.title}</div>
+                                                <div className='experience-location'>{experience.location}</div>
+                                                <div className='experience-time'>{experience.time}</div>
+                                                <br />
+                                                <pre className='experience-description'>{experience.description}</pre>
+                                            </div>
+                                        )
+                                    } else {
+                                        return '';
+                                    }
+                                })
+                            }
+                            <div className='experience-main-title'>EDUCATION</div>
+                            {
+                                myExperiences.map((experience) => {
+                                    if (experience.type === 'education') {
+                                        return (
+                                            <div key={experience.id} className={
+                                                experience.id % 2 === 0 ?
+                                                    'experience2' : 'experience1'
+                                            }>
+                                                <div className='experience-title'>{experience.title}</div>
+                                                <div className='experience-location'>{experience.location}</div>
+                                                <div className='experience-time'>{experience.time}</div>
+                                                <br />
+                                                <pre className='experience-description'>{experience.description}</pre>
+                                            </div>
+                                        )
+                                    } else {
+                                        return '';
+                                    }
+                                })
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

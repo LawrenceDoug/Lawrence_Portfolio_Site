@@ -4,7 +4,13 @@
 }
 
 a {
+  color: #fefefe;
   text-decoration: none;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 ::-webkit-scrollbar {
@@ -27,7 +33,7 @@ a {
 }
 
 *::selection {
-  color: #fefefe;
+  color: #CAA8F5;
 }
 
 .icon-medium {
@@ -48,6 +54,10 @@ a {
 
 .particles {
   z-index: 100;
+}
+
+.window {
+  padding: 35px;
 }
 
 .disable-link {
@@ -2463,6 +2473,11 @@ a {
   font-size: 100px;
 }
 
+@media screen and (max-width: 600px) {
+  .window {
+    padding: 0;
+  }
+}
 @keyframes carousel {
   from {
     padding-left: 500px;
@@ -2533,7 +2548,7 @@ a {
 }
 @keyframes flowRight {
   from {
-    margin-right: -300px;
+    margin-right: -250px;
     opacity: 0;
   }
   to {
@@ -2543,7 +2558,7 @@ a {
 }
 @keyframes flowLeft {
   from {
-    margin-left: -300px;
+    margin-left: -250px;
     opacity: 0;
   }
   to {
@@ -2553,7 +2568,7 @@ a {
 }
 @keyframes flowUp {
   from {
-    margin-top: 300px;
+    margin-top: 250px;
     opacity: 0;
   }
   to {
@@ -2822,7 +2837,10 @@ a {
   display: flex;
   flex-direction: column;
   flex: 1;
+  justify-content: center;
+  align-items: center;
   margin-top: 65px;
+  padding-right: 20px;
 }
 
 .modal-row {
@@ -3005,8 +3023,13 @@ a {
 }
 
 .location-section-1 {
+  width: 375px;
   box-shadow: inset 0px 0px 10px #1C191F;
   background-color: #E6E6FA;
+}
+
+.location-section-2 {
+  width: 375px;
 }
 
 .location-section-pic {
@@ -3024,6 +3047,7 @@ a {
   width: 300px;
   height: 300px;
   border-radius: 1000px;
+  transform: rotate(90deg);
   object-fit: cover;
 }
 
@@ -3070,7 +3094,10 @@ a {
   }
 
   .modal-column {
-    margin-top: 10px;
+    align-items: initial;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0;
   }
 
   .flex-row-column {
@@ -3086,13 +3113,25 @@ a {
   }
 
   .mapouter {
-    width: 300px;
-    height: 300px;
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .location-section-1 {
+    width: 100%;
   }
 
-  .gmap_canvas {
-    width: 300px;
-    height: 300px;
+  .location-section-2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .location-section-1 {
+    width: 225px;
+  }
+
+  .location-section-2 {
+    width: 225px;
   }
 }
 .body {
@@ -3167,7 +3206,7 @@ a {
   padding: 25px;
   width: 100%;
   height: 100vh;
-  background-color: #8884FF;
+  background-color: #E6E6FA;
 }
 
 #top-graphic-design-projects-container {
@@ -3191,6 +3230,7 @@ a {
 }
 
 .section-header {
+  font-family: "Titillium Web", cursive;
   margin: auto;
   padding: 5px 20px;
   width: 100%;
@@ -3214,19 +3254,88 @@ a {
 
 .project {
   display: none;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.circle {
-  width: 450px;
-  height: 450px;
-  background-color: #1C191F;
-  border-radius: 300px;
+.top-project-title {
+  padding-bottom: 2rem;
+  font-family: "Titillium Web", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
 }
 
+.top-project-img {
+  width: 400px;
+  height: 400px;
+}
+
+.top-project-desc {
+  margin: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  width: 400px;
+  height: 150px;
+  text-align: left;
+}
+
+.top-project-btn {
+  padding: 10px;
+  width: 100%;
+  color: #fefefe;
+  background-color: #222140;
+  text-align: center;
+}
+.top-project-btn:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .project {
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  .top-project-title {
+    padding-bottom: 2rem;
+    font-family: "Titillium Web", cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .top-project-img {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  .top-project-desc {
+    margin: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    width: 200px;
+    height: 250px;
+    text-align: left;
+  }
+
+  .top-project-btn {
+    padding: 10px;
+    width: 100%;
+    color: #fefefe;
+    background-color: #222140;
+    text-align: center;
+  }
+  .top-project-btn:hover {
+    cursor: pointer;
+  }
+}
 @media screen and (max-width: 900px) {
-  .header-content {
+  .header-content, .mountain-img, .header-container {
     display: none;
   }
 }
@@ -3249,7 +3358,6 @@ a {
   #top-web-projects-container {
     width: 100%;
     height: 100%;
-    background-color: #8884FF;
   }
 
   .home-projects-container {
@@ -3265,12 +3373,88 @@ a {
 
   .project {
     display: block;
-    padding-top: 30px;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
 
-  .circle {
+  .top-project-title {
+    padding-bottom: 2rem;
+    font-family: "Titillium Web", cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .top-project-img {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+  }
+
+  .top-project-desc {
+    margin: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    width: 400px;
+    height: 150px;
+    text-align: left;
+  }
+
+  .top-project-btn {
+    padding: 10px;
+    width: 100%;
+    color: #fefefe;
+    background-color: #222140;
+    text-align: center;
+  }
+  .top-project-btn:hover {
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project {
+    display: block;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  .top-project-title {
+    padding-bottom: 2rem;
+    font-family: "Titillium Web", cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .top-project-img {
+    margin: auto;
     width: 300px;
     height: 300px;
+  }
+
+  .top-project-desc {
+    margin: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    width: 300px;
+    height: 200px;
+    text-align: left;
+  }
+
+  .top-project-btn {
+    padding: 10px;
+    width: 100%;
+    color: #fefefe;
+    background-color: #222140;
+    text-align: center;
+  }
+  .top-project-btn:hover {
+    cursor: pointer;
   }
 }
 .about-container {
@@ -3336,12 +3520,17 @@ a {
   justify-content: center;
   margin: auto;
   padding: 1rem;
+  padding-top: 5rem;
   padding-bottom: 3rem;
   width: 75%;
   color: #1C191F;
   font-size: 1.3rem;
-  text-indent: 50px;
   text-align: left;
+}
+
+.about-desc-title {
+  text-align: left;
+  font-weight: bolder;
 }
 
 .extra-info-container {
@@ -3405,6 +3594,12 @@ a {
   flex: 8;
 }
 
+.experiences {
+  display: flex;
+  flex-direction: column;
+  flex: 8;
+}
+
 .experience1 {
   padding-bottom: 15px;
   background-color: #CAA8F5;
@@ -3445,6 +3640,7 @@ a {
   padding-right: 5px;
   padding-bottom: 15px;
   width: 95%;
+  font-family: "Titillium Web", cursive;
   font-size: 1.2rem;
 }
 
@@ -3520,6 +3716,10 @@ a {
 .portfolio-active {
   padding-bottom: 3px;
   border-bottom: 1px solid #1C191F;
+}
+
+.project-divider {
+  padding: 0px 10px;
 }
 
 .graphic-design-container {
@@ -3707,7 +3907,7 @@ a {
   justify-content: center;
   object-fit: cover;
   margin: auto auto;
-  height: 85%;
+  height: 100%;
   border: 10px solid #fefefe;
 }
 
@@ -3728,6 +3928,19 @@ a {
   font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  .expanded-gd-img {
+    display: flex;
+    flex-direction: initial;
+    flex: 6;
+    justify-content: center;
+    object-fit: cover;
+    margin: auto auto;
+    width: 100vw;
+    height: 100%;
+    border: 10px solid #fefefe;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .img-grid {
     grid-template-columns: auto auto;

@@ -56,7 +56,7 @@ class WebDevelopment extends Component {
                                         <div className='project-description'>{project.desc1}</div>
                                         <div className='btn-container'>
                                             <a href={project.link1} target='_blank' rel="noopener noreferrer">
-                                                <div className='web-btn'>Click to View</div>
+                                                <div className='web-btn hvr-grow'>Click to View</div>
                                             </a>
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@ class WebDevelopment extends Component {
                                         <div className='project-description'>{project.desc2}</div>
                                         <div className='btn-container'>
                                             <a href={project.link2} target='_blank' rel="noopener noreferrer">
-                                                <div className='web-btn'>Click to View</div>
+                                                <div className='web-btn hvr-grow'>Click to View</div>
                                             </a>
                                         </div>
                                     </div>

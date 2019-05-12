@@ -2,113 +2,210 @@
     "skills": [{
             "id": 0,
             "type": "core",
-            "title": "HTML",
-            "link": "https://www.w3schools.com/html/"
+            "title": "HTML5",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
         },
         {
             "id": 1,
             "type": "core",
-            "title": "CSS",
-            "link": "https://www.w3schools.com/css/"
+            "title": "CSS3",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
         },
         {
-            "id": 2,
-            "type": "core",
-            "title": "Javascript",
-            "link": "https://www.javascript.com/"
-        },
-        {
-            "id": 3,
-            "type": "core",
-            "title": "ReactJS",
-            "link": "https://reactjs.org/"
-        },
-        {
-            "id": 4,
-            "type": "core",
-            "title": "ReduxJS",
-            "link": "https://redux.js.org/"
-        },
-        {
-            "id": 5,
-            "type": "core",
-            "title": "Node.js",
-            "link": "https://nodejs.org/en/"
-        },
-        {
-            "id": 6,
-            "type": "core",
-            "title": "ExpressJS",
-            "link": "https://expressjs.com/"
-        },
-        {
-            "id": 7,
-            "type": "core",
-            "title": "MongoDB",
-            "link": "https://www.mongodb.com/"
-        },
-        {
-            "id": 21,
-            "type": "core",
-            "title": "AngularJS",
-            "link": "https://angularjs.org/"
-        },
-        {
-            "id": 22,
-            "type": "core",
-            "title": "Android App Dev",
-            "link": "https://developer.android.com/studio/?gclid=CjwKCAiAnsnjBRB6EiwATkM1XrHWH-1D7vFEaa795vd6gTT2j6udhoa2walEMsrnSUXys-HcwkC3ahoCrasQAvD_BwE"
-        },
-        {
-            "id": 23,
+            "id": 19,
             "type": "core",
             "title": "Python",
             "link": "https://www.python.org/"
         },
         {
-            "id": 24,
+            "id": 2,
+            "type": "core",
+            "title": "Javascript ES6",
+            "link": "http://es6-features.org/#Constants"
+        },
+        {
+            "id": 3,
+            "type": "core",
+            "title": "UI/UX",
+            "link": "https://hackernoon.com/what-is-ui-ux-design-1f01e9dbbf02"
+        },
+        {
+            "id": 4,
+            "type": "core",
+            "title": "ReactJS",
+            "link": "https://reactjs.org/"
+        },
+        {
+            "id": 5,
+            "type": "core",
+            "title": "Redux",
+            "link": "https://redux.js.org/"
+        },
+        {
+            "id": 6,
+            "type": "core",
+            "title": "Node.js",
+            "link": "https://nodejs.org/en/"
+        },
+        {
+            "id": 7,
+            "type": "core",
+            "title": "ExpressJS",
+            "link": "https://expressjs.com/"
+        },
+        {
+            "id": 8,
+            "type": "core",
+            "title": "MongoDB",
+            "link": "https://www.mongodb.com/"
+        },
+        {
+            "id": 9,
+            "type": "core",
+            "title": "Angular",
+            "link": "https://angular.io/"
+        },
+        {
+            "id": 10,
+            "type": "core",
+            "title": "AngularJS",
+            "link": "https://angularjs.org/"
+        },
+        {
+            "id": 20,
             "type": "core",
             "title": "Ruby",
             "link": "https://www.ruby-lang.org/en/"
         },
         {
-            "id": 25,
+            "id": 11,
             "type": "core",
-            "title": "Microsoft SQL Server",
-            "link": "https://www.microsoft.com/en-us/sql-server/default.aspx"
+            "title": "Adobe CC",
+            "link": "https://www.adobe.com/creativecloud.html"
         },
         {
-            "id": 26,
+            "id": 12,
+            "type": "core",
+            "title": "Microsoft Office",
+            "link": "https://products.office.com/en-us/home"
+        },
+        {
+            "id": 13,
+            "type": "core",
+            "title": "Git",
+            "link": "https://github.com/LawrenceDoug?tab=repositories"
+        },
+        {
+            "id": 14,
+            "type": "core",
+            "title": "SASS",
+            "link": "https://sass-lang.com/"
+        },
+        {
+            "id": 15,
+            "type": "core",
+            "title": "npm",
+            "link": "https://www.npmjs.com/"
+        },
+        {
+            "id": 22,
             "type": "core",
             "title": "C#",
             "link": "https://docs.microsoft.com/en-us/dotnet/csharp/"
         },
         {
-            "id": 27,
+            "id": 16,
+            "type": "core",
+            "title": "Microsoft SQL Server",
+            "link": "https://www.microsoft.com/en-us/sql-server/default.aspx"
+        },
+        {
+            "id": 18,
+            "type": "core",
+            "title": "Scrum",
+            "link": "https://www.scrum.org/"
+        },
+        {
+            "id": 17,
+            "type": "core",
+            "title": "Agile Development",
+            "link": "https://www.agilealliance.org/agile101/"
+        },
+        {
+            "id": 21,
+            "type": "core",
+            "title": "Pug",
+            "link": "https://pugjs.org/api/getting-started.html"
+        },
+        {
+            "id": 23,
             "type": "core",
             "title": "WPF",
             "link": "https://docs.microsoft.com/en-us/dotnet/framework/wpf/"
         },
         {
-            "id": 28,
+            "id": 24,
             "type": "core",
             "title": "ASP.net MVC 5",
             "link": "https://dotnet.microsoft.com/apps/aspnet/mvc"
         },
+        {
+            "id": 27,
+            "type": "core",
+            "title": "Java",
+            "link": "https://go.java/index.html?intcmp=gojava-banner-java-com"
+        },
+        {
+            "id": 25,
+            "type": "core",
+            "title": "Android Studio",
+            "link": "https://developer.android.com/"
+        },
+        {
+            "id": 30,
+            "type": "core",
+            "title": "Visual Studio",
+            "link": "https://visualstudio.microsoft.com/"
+        },
+        {
+            "id": 26,
+            "type": "core",
+            "title": "Cross Browser Development",
+            "link": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Introduction"
+        },
+        {
+            "id": 28,
+            "type": "core",
+            "title": "Eclipse",
+            "link": "https://www.eclipse.org/ide/"
+        },
+        {
+            "id": 29,
+            "type": "core",
+            "title": "Visual Studio Code",
+            "link": "https://code.visualstudio.com/"
+        },
+
+
         {
             "id": 51,
             "type": "soft",
             "title": "Leadership"
         },
         {
-            "id": 53,
+            "id": 52,
             "type": "soft",
             "title": "Team Collaboration"
         },
         {
-            "id": 54,
+            "id": 53,
             "type": "soft",
             "title": "Time Management"
+        },
+        {
+            "id": 54,
+            "type": "soft",
+            "title": "Creativity"
         },
         {
             "id": 55,
@@ -118,12 +215,57 @@
         {
             "id": 56,
             "type": "soft",
-            "title": "Interpersonal Skills"
+            "title": "Ambition"
         },
         {
             "id": 57,
             "type": "soft",
+            "title": "Interpersonal Skills"
+        },
+        {
+            "id": 58,
+            "type": "soft",
+            "title": "Dedication"
+        },
+        {
+            "id": 59,
+            "type": "soft",
             "title": "Professional Communication"
+        },
+        {
+            "id": 60,
+            "type": "soft",
+            "title": "Problem Solving"
+        },
+        {
+            "id": 61,
+            "type": "soft",
+            "title": "Innovation"
+        },
+        {
+            "id": 62,
+            "type": "soft",
+            "title": "Critical Thinking"
+        },
+        {
+            "id": 63,
+            "type": "soft",
+            "title": "Motivation"
+        },
+        {
+            "id": 64,
+            "type": "soft",
+            "title": "Reliability"
+        },
+        {
+            "id": 65,
+            "type": "soft",
+            "title": "Respectful"
+        },
+        {
+            "id": 66,
+            "type": "soft",
+            "title": "Awareness"
         }
     ]
 }

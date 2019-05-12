@@ -4,21 +4,32 @@
             "title": "RizePoint - Student Intern UIUX Designer",
             "location": "Greater Salt Lake City Area",
             "time": "April 2019 - Current",
-            "description": "Designed mock-ups for product site, Redesigned elements of RizePoint brand to fit new brand, Restructuring existing UI blocks, and Technologies include Adobe XD, Illustrator, and Microsoft PowerPoint"
+            "description": "◦ Designed mock-ups for product site\r\n◦ Redesigned elements of RizePoint brand to fit new brand\r\n◦ Restructuring existing UI blocks\r\n◦ Technologies include Adobe XD, Illustrator, and Microsoft PowerPoint",
+            "type": "experience"
         },
         {
             "id": 1,
             "title": "ZIING - Front End Developer for Community Cork Web Application",
             "location": "Greater Salt Lake City Area",
             "time": "January 2019 - March 2019",
-            "description": "Web-based application that gives users info on events in a given area, Designed mock-ups and prototypes for the UI, Coincides with the ZIING mobile event planner application, and Technologies include ReactJS, HTML5, CSS3, Adobe XD, Photoshop, and Illustrator"
+            "description": "◦ Web-based application that gives users info on events in a given area\r\n◦ Designed mock-ups and prototypes for the UI\r\n◦ Coincides with the ZIING mobile event planner application\r\n◦ Technologies include ReactJS, HTML5, CSS3, Adobe XD, Photoshop, and Illustrator",
+            "type": "experience"
         },
         {
             "id": 2,
             "title": "Neumont College of Computer Science - Event Coordinator",
             "location": "143 Main St, Salt Lake City, UT, 84111",
             "time": "Aug 2017 - Current",
-            "description": "Working to ensure that student life is enjoyable by creating engaging events"
+            "description": "◦ Working to ensure that student life is enjoyable by creating engaging events",
+            "type": "experience"
+        },
+        {
+            "id": 10,
+            "title": "Neumont College of Computer Science",
+            "location": "Bachelor of Science in Web Design and Development",
+            "time": "Sep 2016 - Current",
+            "description": "Key Courses: Interactive Web Development (JavaScript), Dynamic and Scripting Languages (Ruby), Development in Third Party Frameworks (Python), Intro into Dynamic Web Programming (ASP.net/C#), Front-End Implementation, Advanced Web Scripting (Angular and React), Human Computer Interface Design (UI/UX), Principles of Software Engineering (Scrum/Agile), Software Design Principles, Mobile App Development (Android Studio), Media Design Tools (Adobe Creative Cloud)",
+            "type": "education"
         }
     ]
 }

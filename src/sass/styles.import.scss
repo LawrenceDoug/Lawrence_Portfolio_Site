@@ -1,53 +1,68 @@
 .icon-medium {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .icon-medium:hover {
-  cursor: pointer;
-  color: $secondary-color;
+    cursor: pointer;
+    color: $secondary-color;
 }
 
 .parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .particles {
-  z-index: 100;
+    z-index: 100;
+}
+
+.window {
+    padding: 35px;
 }
 
 .disable-link {
-  pointer-events: none;
-  background-color: $portfolio-black;
+    pointer-events: none;
+    background-color: $portfolio-black;
 }
 
 .bold-text {
-  font-weight: bolder;
+    font-weight: bolder;
 }
 
 .light-text {
-  font-weight: lighter;
+    font-weight: lighter;
 }
 
 @for $i from 1 through 100 {
-  .padding-#{$i} {
-    padding: $i + px;
-  }
-  .padding-left-#{$i} {
-    padding-left: $i + px;
-  }
-  .padding-right-#{$i} {
-    padding-right: $i + px;
-  }
-  .padding-top-#{$i} {
-    padding-top: $i + px;
-  }
-  .padding-bottom-#{$i} {
-    padding-bottom: $i + px;
-  }
-  .font-size-#{$i} {
-    font-size: $i + px;
-  }
+    .padding-#{$i} {
+        padding: $i + px;
+    }
+
+    .padding-left-#{$i} {
+        padding-left: $i + px;
+    }
+
+    .padding-right-#{$i} {
+        padding-right: $i + px;
+    }
+
+    .padding-top-#{$i} {
+        padding-top: $i + px;
+    }
+
+    .padding-bottom-#{$i} {
+        padding-bottom: $i + px;
+    }
+
+    .font-size-#{$i} {
+        font-size: $i + px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .window {
+        padding: 0;
+    }
 }

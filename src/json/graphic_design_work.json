@@ -5,6 +5,7 @@
             "imgName": "PBS Logos",
             "title": "Custom Seafood Restaurant Logo",
             "desc": "A custom set of logos for an imaginary seafood company called Privateer Bay Seafood. [Class project]",
+            "link": "http://localhost:8000/assets/images/graphicdesign/pbs-logos.png",
             "color": "#E71D36"
         },
         {
@@ -13,55 +14,8 @@
             "imgName": "Spoof Product",
             "title": "Bicycle Playing Cards Spoof",
             "desc": "I introduce you to Tricycle, a card game of wits and unyielding disappiontment. Play at your own risk. [Class Project]",
+            "link": "http://localhost:8000/assets/images/graphicdesign/spoof-bicycle.png",
             "color": "#AD2831"
-        },
-        {
-            "id": 3,
-            "img": "https://media.comicbook.com/2018/12/kingdom-hearts-3-1149243.jpeg",
-            "imgName": "Insta",
-            "title": "EEEEEEEEEEEEEEEEEE",
-            "desc": "Guud picture boi",
-            "color": "purple"
-        },
-        {
-            "id": 4,
-            "img": "https://i.ytimg.com/vi/YUDes_czZ3M/maxresdefault.jpg",
-            "imgName": "Som",
-            "title": "Sum Bit",
-            "desc": "wat",
-            "color": "purple"
-        },
-        {
-            "id": 5,
-            "img": "https://png.pngtree.com/thumb_back/fw800/back_pic/03/87/52/8957d251b0d0605.jpg",
-            "imgName": "Sora",
-            "title": "Sora is Here",
-            "desc": "The boy with the key will save us all",
-            "color": "purple"
-        },
-        {
-            "id": 6,
-            "img": "https://png.pngtree.com/thumb_back/fw800/back_pic/03/87/52/8957d251b0d0605.jpg",
-            "imgName": "Sora",
-            "title": "Sora is Here",
-            "desc": "The boy with the key will save us all",
-            "color": "purple"
-        },
-        {
-            "id": 7,
-            "img": "https://png.pngtree.com/thumb_back/fw800/back_pic/03/87/52/8957d251b0d0605.jpg",
-            "imgName": "Sora",
-            "title": "Sora is Here",
-            "desc": "The boy with the key will save us all",
-            "color": "purple"
-        },
-        {
-            "id": 8,
-            "img": "https://png.pngtree.com/thumb_back/fw800/back_pic/03/87/52/8957d251b0d0605.jpg",
-            "imgName": "Sora",
-            "title": "Sora is Here",
-            "desc": "The boy with the key will save us all",
-            "color": "purple"
         }
     ]
 }

@@ -117,15 +117,18 @@
     text-align: center;
     color: $portfolio-white;
     background-color: $icon-color;
+
     &::before {
         content: 'Click to go up';
     }
+
     &:hover {
         cursor: pointer;
         color: $portfolio-white;
         background-color: $secondary-color;
         font-weight: lighter;
     }
+
     &:hover::before {
         content: 'Head up there';
         transition: all .1s ease;
@@ -210,7 +213,10 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    justify-content: center;
+    align-items: center;
     margin-top: 65px;
+    padding-right: 20px;
 }
 
 .modal-row {
@@ -348,10 +354,12 @@
     &::before {
         content: 'Social Profiles';
     }
+
     &:hover {
         cursor: pointer;
         font-weight: lighter;
     }
+
     &:hover::before {
         content: 'Go on. Check em all out!';
         animation-name: 'flowRight';
@@ -395,8 +403,13 @@
 
 // LOCATION MODAL
 .location-section-1 {
+    width: 375px;
     box-shadow: inset 0px 0px 10px $portfolio-black;
     background-color: $primary-color;
+}
+
+.location-section-2 {
+    width: 375px;
 }
 
 .location-section-pic {
@@ -414,6 +427,7 @@
     width: 300px;
     height: 300px;
     border-radius: 1000px;
+    transform: rotate(90deg);
     object-fit: cover;
 }
 
@@ -440,14 +454,17 @@
         flex-direction: column;
         background-color: $primary-color;
     }
+
     .nav-logo {
         padding: 1rem;
         justify-content: center;
     }
+
     .nav-links {
         padding: 1rem;
         justify-content: center;
     }
+
     .nav-contact {
         padding: 1rem;
         justify-content: center;
@@ -458,24 +475,47 @@
     .modal-row {
         flex-direction: column;
     }
+
     .modal-column {
-        margin-top: 10px;
+        align-items: initial;
+        margin: auto;
+        margin-top: 50px;
+        padding: 0;
     }
+
     .flex-row-column {
         flex-direction: column;
     }
+
     .names {
         flex-direction: column;
     }
+
     .personal-pic-2 {
         display: none;
     }
+
     .mapouter {
-        width: 300px;
-        height: 300px;
+        display: none;
     }
-    .gmap_canvas {
-        width: 300px;
-        height: 300px;
+}
+
+@media only screen and (max-width: 500px) {
+    .location-section-1 {
+        width: 100%;
+    }
+
+    .location-section-2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .location-section-1 {
+        width: 225px;
+    }
+
+    .location-section-2 {
+        width: 225px;
     }
 }

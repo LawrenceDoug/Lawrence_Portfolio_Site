@@ -3,8 +3,14 @@
 }
 
 a {
+    color: $portfolio-white;
     text-decoration: none;
 }
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
 
 // CUSTOM SCROLL BAR
 ::-webkit-scrollbar {
@@ -31,5 +37,5 @@ a {
 
 // Custom element selection
 *::selection {
-    color: $portfolio-white;
+    color: $tertiary-color;
 }
