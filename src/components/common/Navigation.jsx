@@ -214,7 +214,7 @@ class Navigation extends Component {
                             <div className='modal-column padding-left-10'>
                                 <div className='location-section-pic padding-15'>
                                     <div className='personal-pic-container'>
-                                        <img className='personal-pic-2' alt='ME!' src='../assets/images/personal/Lawrence2.jpg' />
+                                        <img className='personal-pic-2' alt='ME!' src='../../assets/images/personal/Lawrence2.jpg' />
                                     </div>
                                 </div>
                                 <div className='location-section-1 padding-15'>

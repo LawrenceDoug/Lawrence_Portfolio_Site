@@ -14,7 +14,7 @@ class About extends Component {
         return (
             <div className='about-container'>
                 <div className='personal-info-container'>
-                    <img className='personal-pic' src='../assets/images/personal/Lawrence.jpg' alt="It's me!" />
+                    <img className='personal-pic' src='../../assets/images/personal/Lawrence.jpg' alt="It's me!" />
                     <div className='personal-info'>
                         <div className='name'>Lawrence Douglas</div>
                         <div className='titles'>Full Stack Web Dev | Graphic Design | UIUX</div>
