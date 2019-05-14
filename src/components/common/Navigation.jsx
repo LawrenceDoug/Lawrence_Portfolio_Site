@@ -210,7 +210,7 @@ class Navigation extends Component {
                 }}>
                     <div className='modal-content'>
                         <div onClick={this.closeLocationModal.bind(this)} className='close'>&times;</div>
-                        <div className='modal-row'>
+                        <div className='overflow-modal modal-row'>
                             <div className='modal-column padding-left-10'>
                                 <div className='location-section-pic padding-15'>
                                     <div className='personal-pic-container'>

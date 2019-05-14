@@ -30,7 +30,7 @@
 
 .gd-item-inner {
     position: absolute;
-    padding: 25px;
+    padding: 15px;
     width: 100%;
     top: 0;
     bottom: 0;
@@ -55,16 +55,16 @@
 
 .info-title {
     padding-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .info-desc {
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 // GRAPHIC DESIGN MODAL ____________________________________________ 
 .g-modal {
-    z-index: 1;
+    z-index: 1000;
     /* Sit on top */
     overflow: hidden;
     position: fixed;
@@ -133,6 +133,7 @@
     display: flex;
     flex-direction: row;
     flex: 1;
+    padding: 10px 0 15px 0;
 }
 
 .gd-modal-close {
@@ -202,7 +203,7 @@
 }
 
 .gd-modal-info-desc {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -213,7 +214,7 @@
         justify-content: center;
         object-fit: cover;
         margin: auto auto;
-        width: 100vw;
+        width: 60%;
         height: 100%;
         border: 10px solid $portfolio-white;
     }
@@ -228,5 +229,34 @@
 @media only screen and (max-width: 600px) {
     .img-grid {
         grid-template-columns: auto;
+    }
+    .info-title {
+        font-size: 1.1rem;
+    }
+    .expanded-gd-img {
+        display: flex;
+        flex-direction: initial;
+        flex: 6;
+        justify-content: center;
+        object-fit: cover;
+        margin: auto auto;
+        width: 100vw;
+        height: 100%;
+        border: 10px solid $portfolio-white;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .info-desc {
+        display: none;
+    } 
+    .gd-item {
+        width: 250px;
+    }
+    .gd-item-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

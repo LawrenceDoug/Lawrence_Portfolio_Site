@@ -28,7 +28,7 @@ class Home extends Component {
       // console.log('Window Y: ' + window.scrollY + '\nWindow InnerHeight: ' + window.innerHeight)
       var project = document.getElementsByClassName('project');
       var i;
-      if (!isMobile && window.innerWidth > 900) {
+      if (!isMobile && window.innerWidth > 1300) {
         if (this.isOnScreenY(webProjects)) {
           for (i = 0; i < project.length; i++) {
             project[0].style.animation = 'flowRight';
@@ -61,7 +61,7 @@ class Home extends Component {
       <div className='home-container'>
         <div style={{
           backgroundImage: !isMobile ? 'url("../assets/images/iconic/moon.svg")' : ''
-        }} className={!isMobile ? 'header_container parallax' : 'header_container'}>
+        }} className={!isMobile ? 'header-container parallax' : 'header-container'}>
           {
             !isMobile ?
               <Particles className='particles' params={{
@@ -117,6 +117,8 @@ class Home extends Component {
         <div id='top-web-projects-container'>
           <br />
           <div className='section-header'>Top Web Projects</div>
+          <br/>
+          <br/>
           <div className='home-projects-container'>
             <div className='project'>
               <p className='top-project-title'>GameSpeak</p>

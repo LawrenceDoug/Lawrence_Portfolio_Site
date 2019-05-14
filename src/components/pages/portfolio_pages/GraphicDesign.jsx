@@ -134,9 +134,9 @@ class GraphicDesign extends Component {
                                 <div key={project.id} className='g-modal-content' style={{ backgroundColor: project.color }}>
                                     <div className='g-modal-top'>
                                         <div className='modalFlex-1'>
-                                            <div className="gd-modal-moreInfo"><FontAwesomeIcon icon={faInfoCircle} />
+                                            {/* <div className="gd-modal-moreInfo"><FontAwesomeIcon icon={faInfoCircle} />
                                                 <span className='gd-tooltip-right'>In development</span>
-                                            </div>
+                                            </div> */}
                                         </div>
                                         <div className='modalFlex-2'>
                                             <div onClick={this.closeModal.bind(this)} className="gd-modal-close">&times;</div>
