@@ -61,7 +61,7 @@
     justify-content: center;
     margin: auto;
     padding: 1rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
     width: 75%;
     color: $portfolio-black;
@@ -71,6 +71,7 @@
 }
 
 .about-desc-title {
+    padding-bottom: 1rem;
     text-align: left;
     font-weight: bolder;
 }
@@ -96,7 +97,7 @@
 .skills-container {
     display: flex;
     flex-direction: column;
-    flex: 2;
+    flex: 4;
 }
 
 .skills {
@@ -139,7 +140,7 @@
 .experiences {
     display: flex;
     flex-direction: column;
-    flex: 8;
+    flex: 6;
 }
 
 .experience1 {

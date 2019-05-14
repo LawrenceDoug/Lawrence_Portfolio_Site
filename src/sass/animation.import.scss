@@ -34,22 +34,22 @@
 
 @keyframes moveImageRight {
     from {
-        margin-left: 1000px; 
+        margin-right: -1000px; 
         opacity: 0;
     }
     to {
-        margin-left: 0;         
+        margin-right: 0;         
         opacity: 1;
     }
 }
 
 @keyframes moveImageLeft {
     from {
-        padding-right: 1000px; 
+        margin-left: -1000px; 
         // opacity: 0;
     }
     to {
-        padding-right: 0px;         
+        margin-left: 0px;         
         // opacity: 1;
     }
 }

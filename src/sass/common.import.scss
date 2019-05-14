@@ -1,6 +1,6 @@
 // NAVBAR
 .nav {
-    z-index: 1;
+    z-index: 500;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -431,11 +431,29 @@
     object-fit: cover;
 }
 
+.overflow-modal {
+    overflow-x: auto;
+}
+
+.overflow-modal::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.overflow-modal::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.overflow-modal::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+
+
 // GOOGLE EMBEDED MAP
 .mapouter {
     position: relative;
     margin-top: 65px;
-    width: 1000px;
+    width: 800px;
     height: 800px;
     text-align: right;
 }
@@ -443,7 +461,7 @@
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
-    width: 1000px;
+    width: 800px;
     height: 800px;
 }
 

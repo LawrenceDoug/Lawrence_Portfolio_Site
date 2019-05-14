@@ -12,8 +12,6 @@
     flex: 1;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 .project-container {
@@ -21,8 +19,8 @@
     flex-direction: row;
     flex: 1;
     width: 100%;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .project-img {
@@ -94,5 +92,8 @@
         flex: 1;
         width: 100%;
         padding-top: 1.9rem;
+    }
+    .web-development-container {
+        overflow-x: auto;
     }
 }

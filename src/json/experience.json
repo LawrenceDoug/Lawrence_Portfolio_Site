@@ -1,7 +1,7 @@
 {
     "experiences": [{
             "id": 0,
-            "title": "RizePoint - Student Intern UIUX Designer",
+            "title": "RizePoint - Intern UIUX Designer",
             "location": "Greater Salt Lake City Area",
             "time": "April 2019 - Current",
             "description": "◦ Designed mock-ups for product site\r\n◦ Redesigned elements of RizePoint brand to fit new brand\r\n◦ Restructuring existing UI blocks\r\n◦ Technologies include Adobe XD, Illustrator, and Microsoft PowerPoint",
@@ -12,7 +12,7 @@
             "title": "ZIING - Front End Developer for Community Cork Web Application",
             "location": "Greater Salt Lake City Area",
             "time": "January 2019 - March 2019",
-            "description": "◦ Web-based application that gives users info on events in a given area\r\n◦ Designed mock-ups and prototypes for the UI\r\n◦ Coincides with the ZIING mobile event planner application\r\n◦ Technologies include ReactJS, HTML5, CSS3, Adobe XD, Photoshop, and Illustrator",
+            "description": "◦ Built from the ground up\r\n◦ Designed mock-ups and prototypes for the UI\r\n◦ Coincides with the ZIING mobile event planner application\r\n◦ Developed most of the front-end for the application\r\n◦ Technologies include ReactJS, HTML5, CSS3, Adobe XD, Photoshop, and Illustrator",
             "type": "experience"
         },
         {

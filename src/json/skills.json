@@ -18,6 +18,12 @@
             "link": "https://www.python.org/"
         },
         {
+            "id": 11,
+            "type": "core",
+            "title": "Adobe CC",
+            "link": "https://www.adobe.com/creativecloud.html"
+        },
+        {
             "id": 2,
             "type": "core",
             "title": "Javascript ES6",
@@ -34,6 +40,12 @@
             "type": "core",
             "title": "ReactJS",
             "link": "https://reactjs.org/"
+        },
+        {
+            "id": 13,
+            "type": "core",
+            "title": "Git",
+            "link": "https://github.com/LawrenceDoug?tab=repositories"
         },
         {
             "id": 5,
@@ -54,16 +66,16 @@
             "link": "https://expressjs.com/"
         },
         {
-            "id": 8,
-            "type": "core",
-            "title": "MongoDB",
-            "link": "https://www.mongodb.com/"
-        },
-        {
             "id": 9,
             "type": "core",
             "title": "Angular",
             "link": "https://angular.io/"
+        },
+        {
+            "id": 8,
+            "type": "core",
+            "title": "MongoDB",
+            "link": "https://www.mongodb.com/"
         },
         {
             "id": 10,
@@ -78,28 +90,16 @@
             "link": "https://www.ruby-lang.org/en/"
         },
         {
-            "id": 11,
+            "id": 14,
             "type": "core",
-            "title": "Adobe CC",
-            "link": "https://www.adobe.com/creativecloud.html"
+            "title": "SASS",
+            "link": "https://sass-lang.com/"
         },
         {
             "id": 12,
             "type": "core",
             "title": "Microsoft Office",
             "link": "https://products.office.com/en-us/home"
-        },
-        {
-            "id": 13,
-            "type": "core",
-            "title": "Git",
-            "link": "https://github.com/LawrenceDoug?tab=repositories"
-        },
-        {
-            "id": 14,
-            "type": "core",
-            "title": "SASS",
-            "link": "https://sass-lang.com/"
         },
         {
             "id": 15,
@@ -114,6 +114,12 @@
             "link": "https://docs.microsoft.com/en-us/dotnet/csharp/"
         },
         {
+            "id": 23,
+            "type": "core",
+            "title": "WPF",
+            "link": "https://docs.microsoft.com/en-us/dotnet/framework/wpf/"
+        },
+        {
             "id": 16,
             "type": "core",
             "title": "Microsoft SQL Server",
@@ -124,6 +130,12 @@
             "type": "core",
             "title": "Scrum",
             "link": "https://www.scrum.org/"
+        },
+        {
+            "id": 27,
+            "type": "core",
+            "title": "Java",
+            "link": "https://go.java/index.html?intcmp=gojava-banner-java-com"
         },
         {
             "id": 17,
@@ -138,22 +150,10 @@
             "link": "https://pugjs.org/api/getting-started.html"
         },
         {
-            "id": 23,
-            "type": "core",
-            "title": "WPF",
-            "link": "https://docs.microsoft.com/en-us/dotnet/framework/wpf/"
-        },
-        {
             "id": 24,
             "type": "core",
             "title": "ASP.net MVC 5",
             "link": "https://dotnet.microsoft.com/apps/aspnet/mvc"
-        },
-        {
-            "id": 27,
-            "type": "core",
-            "title": "Java",
-            "link": "https://go.java/index.html?intcmp=gojava-banner-java-com"
         },
         {
             "id": 25,
@@ -168,21 +168,21 @@
             "link": "https://visualstudio.microsoft.com/"
         },
         {
-            "id": 26,
-            "type": "core",
-            "title": "Cross Browser Development",
-            "link": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Introduction"
-        },
-        {
             "id": 28,
             "type": "core",
             "title": "Eclipse",
             "link": "https://www.eclipse.org/ide/"
         },
         {
+            "id": 26,
+            "type": "core",
+            "title": "Cross Browser Development",
+            "link": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Introduction"
+        },
+        {
             "id": 29,
             "type": "core",
-            "title": "Visual Studio Code",
+            "title": "VS Code",
             "link": "https://code.visualstudio.com/"
         },
 
@@ -206,6 +206,11 @@
             "id": 54,
             "type": "soft",
             "title": "Creativity"
+        },
+        {
+            "id": 64,
+            "type": "soft",
+            "title": "Reliability"
         },
         {
             "id": 55,
@@ -233,6 +238,16 @@
             "title": "Professional Communication"
         },
         {
+            "id": 66,
+            "type": "soft",
+            "title": "Awareness"
+        },
+        {
+            "id": 62,
+            "type": "soft",
+            "title": "Critical Thinking"
+        },
+        {
             "id": 60,
             "type": "soft",
             "title": "Problem Solving"
@@ -243,29 +258,14 @@
             "title": "Innovation"
         },
         {
-            "id": 62,
-            "type": "soft",
-            "title": "Critical Thinking"
-        },
-        {
             "id": 63,
             "type": "soft",
             "title": "Motivation"
         },
         {
-            "id": 64,
-            "type": "soft",
-            "title": "Reliability"
-        },
-        {
             "id": 65,
             "type": "soft",
             "title": "Respectful"
-        },
-        {
-            "id": 66,
-            "type": "soft",
-            "title": "Awareness"
         }
     ]
 }

@@ -56,3 +56,11 @@
 .project-divider {
     padding: 0px 10px;
 }
+
+@media screen and (max-width: 375px) {
+    .portfolio-container {
+        padding: 2px;
+        padding-top: 3rem;
+        height: 100%;
+    }
+}

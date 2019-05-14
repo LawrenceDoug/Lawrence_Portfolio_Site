@@ -21,22 +21,26 @@ class About extends Component {
                     </div>
                     <div className='description'>
                         <p className='about-desc-title'>F O U N D A T I O N</p>
-                        <br />
                         <div>
-                            I'm a very hard worker indeed as my motivations stem from the support I can provide for my friends and family if I succeed. I am one with many goals and aspirations, in which case, they're here to drive my ambitions. To accomplish anything, I need to take initiative and actually do it first. "They always say time changes things, but you actually have to change them yourself" ~ Andy Warhol.
+                            Ya'know... hard work pays off in the end. It's what makes us stronger. No need to alarm yourselves, I won't tell you how to live your lives or deliver a motivational speech. However, what I will say is this, the hard work/effort I throw into myself and those around me have helped me in more ways than one. To me, it's about the journey and not about the destination. I like to focus on what it takes to get somewhere rather than where that place is. I work hard to get to where I need to be and where I want to be, and remember what it took to climb those stairs. That's all there is to it!
                             <br />
                             <br />
-                            I'm constantly looking for new ways to improve upon myself, and the only way to do that is through learning. That is why I live by the phrase "Learning is Life".
+                            My work ethic stems from my motivated desire to support my friends and family through the successes that I garner. Also, one small tid bit I'm forgetting is, it's my humane desire to be the best at everything I do. I constantly look for new ways to improve upon myself, and the only way to do that is by gathering knowledge. "Knowledge is power" isn't that what they teach you in school. It's soo true though.
+                            <br />
+                            <br />
+                            "They always say time changes things, but you actually have to change them yourself" ~ Andy Warhol.
+                            <br />
+                            <br />
+                            One last thing... Smiles are free, so share them.
                         </div>
                         <br />
                         <p className='about-desc-title'>P R O J E C T S</p>
-                        <br />
                         <div>
-                            I've worked on various projects that include the technologies listed below. These projects range from basic small scale computer applications to large scale full-stack web applications
+                            I've worked on various projects that included some of the technologies listed below. These projects range from basic small scale computer applications to large scale full-stack web applications
                             <br />
                             <br />
                             <i>Technologies Used: </i>
-                            HTML5 | CSS3 | JavaScript ES6 | UI/UX | Git | React.js | Redux | Angular | Express.js | Node.js | MongoDB | Adobe CC | Microsoft Office | Git | SASS | NPM | Microsoft SQL Server | Agile Project Development | Scrum | Python | Ruby | Pug | C# | Android Studio | Visual Studio (Code) | Java | Eclipse | ASP.NET MVC | Cross Browser Development
+                            HTML5 | CSS3 | JavaScript ES6 | UI/UX | Git | React.js | Redux | Angular | Express.js | Node.js | MongoDB | Adobe CC | Microsoft Office | Git | SASS | NPM | Microsoft SQL Server | Agile Project Development | Scrum | Python | Ruby | Pug | C# | Android Studio | Visual Studio (Code) | Java | Eclipse | ASP.NET MVC | Cross Browser Development | Heroku
                         </div>
                     </div>
                 </div>
