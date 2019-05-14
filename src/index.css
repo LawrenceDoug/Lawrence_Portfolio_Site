@@ -3055,18 +3055,6 @@ pre {
   overflow-x: auto;
 }
 
-.overflow-modal::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.overflow-modal::-webkit-scrollbar-thumb {
-  background: transparent;
-}
-
-.overflow-modal::-webkit-scrollbar-thumb:hover {
-  background: transparent;
-}
-
 .mapouter {
   position: relative;
   margin-top: 65px;

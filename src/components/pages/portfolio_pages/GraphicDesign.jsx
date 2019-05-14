@@ -1,7 +1,8 @@
 //Imports
+// faInfoCircle
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfoCircle, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 // graphic_design_work JSON
 const work = require('../../../json/graphic_design_work');
@@ -17,9 +18,9 @@ var slideIndex = 1;
 var slide;
 
 const showSlides = (n) => {
-    console.log('N: ' + n);
-    console.log('Length: ' + slides.length);
-    console.log('Slide Index: ' + slideIndex)
+    // console.log('N: ' + n);
+    // console.log('Length: ' + slides.length);
+    // console.log('Slide Index: ' + slideIndex)
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
@@ -77,9 +78,9 @@ class GraphicDesign extends Component {
 
     plusSlides() {
         slide = true;
-        console.log(slideIndex);
+        // console.log(slideIndex);
         showSlides(slideIndex += 1);
-        console.log(slideIndex);
+        // console.log(slideIndex);
     }
 
     minusSlides() {
