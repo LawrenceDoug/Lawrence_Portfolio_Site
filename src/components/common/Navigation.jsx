@@ -118,8 +118,8 @@ class Navigation extends Component {
                 </div>
                 <div className='nav-links'>
                     <NavLink to='/' className='nav-link' exact={true}>Home</NavLink>
-                    <NavLink to='/about' className='nav-link'>About</NavLink>
                     <NavLink to='/work' className='nav-link'>Work</NavLink>
+                    <NavLink to='/about' className='nav-link'>About</NavLink>
                     <NavLink to={Resume} className='nav-link' target='_blank'>Resume</NavLink>
                 </div>
                 <div className='nav-contact'>
@@ -219,16 +219,15 @@ class Navigation extends Component {
                                 </div>
                                 <div className='location-section-1 padding-15'>
                                     <p className='bold-text font-size-25'>Lawrence Douglas</p>
-                                    <p className='light-text'>Full Stack Web Developer | Graphic Design | UIUX</p>
+                                    <p className='light-text'>Front End Developer | Graphic Design | UIUX</p>
                                 </div>
                                 <div className='location-section-2 padding-15'>
-                                    <p className='bold-text font-size-25'>Home Address: </p>
-                                    <p className='light-text'> 764 W 3940 S</p>
+                                    <p className='bold-text font-size-25'>Location </p>
                                     <p className='light-text'>Salt Lake City, UT, 84123</p>
                                 </div>
                                 <div className='location-section-1 padding-15'>
-                                    <p className='bold-text font-size-25'>Email:</p>
-                                    <p className=''><strong>Business:</strong> lawrence.cwd@gmail.com</p>
+                                    <p className='bold-text font-size-25'>Email</p>
+                                    <p className=''>lawrence.cwd@gmail.com</p>
                                     {/* <p className=''><strong>Personal Business:</strong> theorganizationsinquiries@gmail.com</p>                                     */}
                                 </div>
                                 <div className='location-section-2 padding-15 padding-top-30'>

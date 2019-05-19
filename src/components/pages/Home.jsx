@@ -22,34 +22,34 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => {
-      var webProjects = document.getElementById('top-web-projects-container');
-      // console.log('webProjects element: \nOffsetTop: ' + webProjects.offsetTop + '\nOffsetHeight:' + webProjects.offsetHeight)
-      // console.log('Window Y: ' + window.scrollY + '\nWindow InnerHeight: ' + window.innerHeight)
-      var project = document.getElementsByClassName('project');
-      var i;
-      if (!isMobile && window.innerWidth > 1300) {
-        if (this.isOnScreenY(webProjects)) {
-          for (i = 0; i < project.length; i++) {
-            project[0].style.animation = 'flowRight';
-            project[0].style.animationDuration = '1.5s';
-            project[1].style.animation = 'flowUp';
-            project[1].style.animationDuration = '1.5s';
-            project[2].style.animation = 'flowLeft';
-            project[2].style.animationDuration = '1.5s';
-            project[i].style.display = 'block';
-          }
-        } else {
-          for (i = 0; i < project.length; i++) {
-            project[i].style.display = 'none';
-          }
-        }
-      } else {
-        for (i = 0; i < project.length; i++) {
-          project[i].style.display = 'block';
-        }
-      }
-    }, 1000);
+    // this.interval = setInterval(() => {
+    //   var webProjects = document.getElementById('top-web-projects-container');
+    //   // console.log('webProjects element: \nOffsetTop: ' + webProjects.offsetTop + '\nOffsetHeight:' + webProjects.offsetHeight)
+    //   // console.log('Window Y: ' + window.scrollY + '\nWindow InnerHeight: ' + window.innerHeight)
+    //   var project = document.getElementsByClassName('project');
+    //   var i;
+    //   if (!isMobile && window.innerWidth > 1300) {
+    //     if (this.isOnScreenY(webProjects)) {
+    //       for (i = 0; i < project.length; i++) {
+    //         project[0].style.animation = 'flowRight';
+    //         project[0].style.animationDuration = '1.5s';
+    //         project[1].style.animation = 'flowUp';
+    //         project[1].style.animationDuration = '1.5s';
+    //         project[2].style.animation = 'flowLeft';
+    //         project[2].style.animationDuration = '1.5s';
+    //         project[i].style.display = 'block';
+    //       }
+    //     } else {
+    //       for (i = 0; i < project.length; i++) {
+    //         project[i].style.display = 'none';
+    //       }
+    //     }
+    //   } else {
+    //     for (i = 0; i < project.length; i++) {
+    //       project[i].style.display = 'block';
+    //     }
+    //   }
+    // }, 1000);
   }
 
   componentWillUnmount() {
@@ -107,7 +107,7 @@ class Home extends Component {
                 <img className='mountain-img' src='../assets/images/iconic/mountains.svg' alt='mountain' />
                 <div className='header-content'>
                   <p className='my-name'>Lawrence Douglas</p>
-                  <p className='my-desc'>Your friendly neighboorhood <strong>Full Stack Web Developer</strong> guy, <strong>UI/UX</strong> guy, and <strong>Graphic Designer</strong> guy. I work to please my fellow huumans with good visuals and a well thought out plan.</p>
+                  <p className='my-desc'>Your friendly neighboorhood <strong>Front End Web Developer</strong> guy, <strong>UI/UX</strong> guy, and <strong>Graphic Designer</strong> guy. I work to please my fellow huumans with good visuals and a well thought out plan.</p>
                 </div>
               </div>
               :

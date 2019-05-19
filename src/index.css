@@ -2828,7 +2828,8 @@ pre {
 
 .modal-content {
   margin: auto;
-  padding: 25px;
+  padding: 0px 25px;
+  padding-bottom: 20px;
   color: #1C191F;
   background-color: #fefefe;
 }
@@ -3024,12 +3025,13 @@ pre {
 
 .location-section-1 {
   width: 375px;
-  box-shadow: inset 0px 0px 10px #1C191F;
+  text-align: center;
   background-color: #E6E6FA;
 }
 
 .location-section-2 {
   width: 375px;
+  text-align: center;
 }
 
 .location-section-pic {
@@ -3179,13 +3181,14 @@ pre {
 
 .header-content {
   position: absolute;
-  margin-top: -350px;
+  margin-top: -300px;
   width: 100%;
   text-align: center;
 }
 
 .my-name {
-  font-family: "Leckerli One", cursive;
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
   font-size: 100px;
   text-shadow: 4px 4px 5px #382afc;
 }
@@ -3195,7 +3198,7 @@ pre {
   width: 50%;
   color: #E6E6FA;
   font-family: "Titillium Web", cursive;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .mountain-img {
@@ -3260,7 +3263,7 @@ pre {
 }
 
 .project {
-  display: none;
+  display: block;
   margin: auto;
   padding-left: 30px;
   padding-right: 30px;
@@ -4040,6 +4043,7 @@ pre {
   flex: 3;
   justify-content: flex-start;
   padding: 25px;
+  width: 600px;
 }
 
 .project-title {

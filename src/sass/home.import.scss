@@ -14,12 +14,13 @@
 
 .header-content {
     position: absolute;
-    margin-top: -350px;
+    margin-top: -300px;
     width: 100%;
     text-align: center;
 }
 
 .my-name {
+    color: #fff;
     font-family: $header-font;
     font-size: 100px;
     text-shadow: 4px 4px 5px rgb(56, 42, 252);
@@ -30,7 +31,7 @@
     width: 50%;
     color: $primary-color;
     font-family: $primary-font;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .mountain-img {
@@ -95,7 +96,7 @@
 }
 
 .project {
-    display: none;
+    display: block;
     margin: auto;
     padding-left: 30px;
     padding-right: 30px;

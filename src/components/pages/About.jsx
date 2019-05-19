@@ -2,12 +2,12 @@
 import React, { Component } from 'react';
 
 //Experience JSON
-const experiences = require('../../json/experience');
-const myExperiences = experiences.experiences;
+// const experiences = require('../../json/experience');
+// const myExperiences = experiences.experiences;
 
 //Skills JSON
-const skills = require('../../json/skills');
-const mySkills = skills.skills;
+// const skills = require('../../json/skills');
+// const mySkills = skills.skills;
 
 class About extends Component {
     render() {
@@ -45,7 +45,7 @@ class About extends Component {
                     </div>
                 </div>
                 <div className='extra-info-container'>
-                    <div className='skills-container'>
+                    {/* <div className='skills-container'>
                         <div className='skills-main-title'>CORE SKILLS</div>
                         <div className='skills'>
                             {
@@ -136,7 +136,7 @@ class About extends Component {
                                 })
                             }
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );

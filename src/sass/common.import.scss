@@ -204,7 +204,8 @@
 
 .modal-content {
     margin: auto;
-    padding: 25px;
+    padding: 0px 25px;
+    padding-bottom: 20px;
     color: $portfolio-black;
     background-color: $portfolio-white;
 }
@@ -404,12 +405,13 @@
 // LOCATION MODAL
 .location-section-1 {
     width: 375px;
-    box-shadow: inset 0px 0px 10px $portfolio-black;
+    text-align: center;
     background-color: $primary-color;
 }
 
 .location-section-2 {
     width: 375px;
+    text-align: center;
 }
 
 .location-section-pic {
