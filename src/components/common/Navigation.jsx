@@ -250,7 +250,7 @@ class Navigation extends Component {
                                 !isMobile ?
                                 <div className="mapouter">
                                     <div className="gmap_canvas">
-                                        <iframe title='my location' width="1000" height="800" id="gmap_canvas" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=764%20W%203940%20S%2C%20Apt.%20ee31+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+                                        <iframe title='my location' width="1000" height="800" id="gmap_canvas" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Salt%20Lake%20City+(My%20Location)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                                     </div>
                                 </div>
                                 :

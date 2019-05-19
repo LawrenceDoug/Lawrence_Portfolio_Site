@@ -1,7 +1,7 @@
 // Import 
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 // web_projects JSON
 const work = require('../../../json/web_projects');
@@ -40,11 +40,11 @@ class WebDevelopment extends Component {
     render() {
         return (
             <div className='web-development-container'>
-                <div className='arrowFlex'>
+                {/* <div className='arrowFlex'>
                     <FontAwesomeIcon
                         onClick={this.minusSlides}
                         className='icon-medium' icon={faArrowLeft} />
-                </div>
+                </div> */}
                 {
                     myWork.map((project) => {
                         return (
@@ -93,11 +93,11 @@ class WebDevelopment extends Component {
                         )
                     })
                 }
-                <div className='arrowFlex'>
+                {/* <div className='arrowFlex'>
                     <FontAwesomeIcon
                         onClick={this.plusSlides}
                         className='icon-medium' icon={faArrowRight} />
-                </div>
+                </div> */}
             </div>
         );
     }

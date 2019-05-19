@@ -4043,7 +4043,6 @@ pre {
   flex: 3;
   justify-content: flex-start;
   padding: 25px;
-  width: 600px;
 }
 
 .project-title {
@@ -4074,6 +4073,7 @@ pre {
 }
 
 .arrowFlex {
+  pointer-events: none;
   display: flex;
   flex-direction: initial;
   flex: 0.1;

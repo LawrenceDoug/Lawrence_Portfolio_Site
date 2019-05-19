@@ -11,7 +11,7 @@
             "img2Name": "Flipbook",
             "title2": "How To Believe In Yourself",
             "desc2": "A very basic online flipbook Angular application that gives a step by step guide on how to believe in yourself. It served the purpose of teaching the basic concepts of routing and components.",
-            "link2": "https://howtobelieveinyourself.herokuapp.com",
+            "link2": "https://howtobelieveinyourself.herokuapp.com/",
             "type2": "finished"
         }
     ]

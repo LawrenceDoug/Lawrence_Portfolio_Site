@@ -21,11 +21,12 @@ const showSlides = (n) => {
     // console.log('N: ' + n);
     // console.log('Length: ' + slides.length);
     // console.log('Slide Index: ' + slideIndex)
-    if (n > slides.length) { slideIndex = 1 }
+    if (n > slides.length || slideIndex > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';
     }
+    console.log('Slide Index: ' + slideIndex)
     slideProject(slideIndex - 1);
     slides[slideIndex - 1].style.display = 'flex';
 }
@@ -79,7 +80,7 @@ class GraphicDesign extends Component {
     plusSlides() {
         slide = true;
         // console.log(slideIndex);
-        showSlides(slideIndex += 1);
+        showSlides(slideIndex++);
         // console.log(slideIndex);
     }
 

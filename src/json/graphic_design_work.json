@@ -6,16 +6,16 @@
             "title": "Custom Seafood Logo",
             "desc": "A custom set of logos for an imaginary seafood restaurant chain called Privateer Bay Seafood. [Class project]",
             "link": "https://lawrencecwdportfolio.herokuapp.com/assets/images/graphicdesign/pbs-logos.png",
-            "color": "#E71D36"
+            "color": "#A8201A"
         },
         {
             "id": 2,
             "img": "../assets/images/graphicdesign/spoof-bicycle.png",
             "imgName": "Spoof Product",
             "title": "Bicycle Cards Spoof",
-            "desc": "I introduce you to Tricycle, a card game of wits and unyielding disappiontment. Play at your own risk. [Class Project]",
+            "desc": "I introduce Tricycle, a card game of wits and unyielding disappiontment. Play at your own risk. [Class Project]",
             "link": "https://lawrencecwdportfolio.herokuapp.com/assets/images/graphicdesign/spoof-bicycle.png",
-            "color": "#AD2831"
+            "color": "#016FB9"
         }
     ]
 }
